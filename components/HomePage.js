@@ -1039,21 +1039,16 @@ export default function HomePage() {
         {/* Contact Form & Info Section */}
         <section>
           <div className="container">
-            <div className="row g-4 justify-content-between">
-              <div className="col-lg-6">
-                <div className="p-40 h-100 rounded-1 overflow-hidden" style={{ position: 'relative' }}>
-                  <video src="/images/getintouch.mp4" autoPlay muted loop playsInline style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}></video>
-                  <div className="sw-overlay"></div>
-                  <div className="gradient-edge-bottom h-80"></div>
-                  <div className="relative z-2">
-                    <div className="subtitle">Get In Touch</div>
-                    <h2 className="wow fadeInUp">We are always ready to help you</h2>
-                    <p>Whether you have a question, a suggestion, or just want to say hello, this is the place to do it. Please fill out the form below with your details and message, and we'll get back to you as soon as possible.</p>
+              <div className="row g-4 justify-content-between">
+                <div className="col-lg-6">
+                  <div className="p-40 h-100 rounded-1 overflow-hidden" style={{ position: 'relative' }}>
+                    <video src="/images/getintouch.mp4" autoPlay muted loop playsInline style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}></video>
+                    <div className="relative z-2">
+                      <div className="subtitle">Get In Touch</div>
+                      <h2 className="wow fadeInUp">We are always ready to help you</h2>
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              <div className="col-lg-6">
+                </div>              <div className="col-lg-6">
                 <div className="p-40 bg-dark-2 text-light rounded-1">
                   <h3>Get In Touch</h3>
                   <form onSubmit={handleContactSubmit} className="relative z1000">
