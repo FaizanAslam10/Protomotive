@@ -909,7 +909,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <p>Sorry, there was an error processing your booking. Please try again.</p>
                     </div>
                     <div class="loading" id="loadingIndicator" style="display: none;">
-                        <i class="fas fa-spinner fa-spin"></i>
+                        <img src="/images/loadinglogo.png" alt="Loading..." style="width: 50px; height: auto;" class="fa-spin" />
                         <p>Processing your booking...</p>
                     </div>
                 </div>

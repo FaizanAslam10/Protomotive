@@ -2243,7 +2243,7 @@ export default function ServicesPage() {
                                   
                                   {bookingStatus.loading && (
                                     <div className="loading" style={{ display: 'block' }}>
-                                      <i className="fas fa-spinner fa-spin"></i>
+                                      <img src="/images/loadinglogo.png" alt="Loading..." style={{ width: '50px', height: 'auto' }} className="fa-spin" />
                                       <p>Processing your booking...</p>
                                     </div>
                                   )}
