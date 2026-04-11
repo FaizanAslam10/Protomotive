@@ -287,7 +287,7 @@ export default function HeaderSimple() {
           <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-clock-time me-2 op-5"></i>Monday - Saturday 9.00 am - 10.00 pm</div>
           <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-phone me-2 op-5"></i><a href="tel:03005005666" style={{ color: '#ffffff', textDecoration: 'none' }}>0300 5005666</a></div>
           <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-location-pin me-2 op-5"></i><a href="https://maps.app.goo.gl/7cBt29ZrMHADxvjQ9" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff', textDecoration: 'underline' }}>Plot 413, DHA Phase 8 - Ex Park View, Lahore</a></div>
-          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-envelope me-2 op-5"></i><a href="mailto:info@protomotive.pk" style={{ color: '#ffffff', textDecoration: 'underline' }}>info@protomotive.pk</a></div>
+          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-envelope me-2 op-5"></i><a href="mailto:habibianofficial@gmail.com" style={{ color: '#ffffff', textDecoration: 'underline' }}>habibianofficial@gmail.com</a></div>
           
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>          <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>About Us</h5>
           <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Protomotive is a unique state of the art auto care facility that provides outstanding customer service. We pride ourselves on the fact that we only trust a combination of the very best materials and the most competent professionals to carry out your chosen service.</p>
@@ -313,10 +313,10 @@ export default function HeaderSimple() {
 
           <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>Follow Us</h5>
           <div className="social-icons">
-            <a href="https://www.facebook.com/people/Precision-Auto-Center/100064953936498/?ref=br_rs#" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/people/Protomotive/61588229888849/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-facebook-f"></i>
             </a>
-            <a href="https://www.instagram.com/precisionautocentre/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/protomotive.pk/" target="_blank" rel="noopener noreferrer">
               <i className="fa-brands fa-instagram"></i>
             </a>
           </div>

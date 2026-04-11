@@ -36,7 +36,7 @@ export default function Footer() {
               <div className="fw-bold text-white">
                 <i className="icofont-envelope id-color"></i>Email Us
               </div>
-              <a href="mailto:info@precisionautocenter.ca" style={{ color: 'inherit', textDecoration: 'underline' }}>info@precisionautocenter.ca</a>
+              <a href="mailto:habibianofficial@gmail.com" style={{ color: 'inherit', textDecoration: 'underline' }}>habibianofficial@gmail.com</a>
             </div>
           </div>
 
