@@ -660,7 +660,7 @@ export default function HomePage() {
               <ServiceCard 
                 id="03"
                 title="CERAMIC COATING"
-                image="/images/services-2/3.webp"
+                image="/images/ceramiccoating.png"
                 description="Backed by a lifetime warranty, you will never have to worry about whether or not your vehicle is protected from harsh chemicals or road grime."
                 delay=".4s"
               />
