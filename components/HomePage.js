@@ -539,8 +539,8 @@ export default function HomePage() {
             <a href="tel:+923005005666" style="color: #f14e4e; text-decoration: none;">0300 5005666</a>
           </p>
           <p style="margin: 10px 0 0 0;">
-            <a href="https://maps.app.goo.gl/ZZtaszD9v3G53RMx5" 
-               target="_blank" 
+            <a href="https://maps.app.goo.gl/8XptJuQif8sRPz6Z7"
+               target="_blank"
                style="display: inline-block; background: #f14e4e; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-size: 13px;">
               Get Directions
             </a>
