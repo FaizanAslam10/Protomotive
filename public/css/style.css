@@ -13838,3 +13838,11 @@ img {
     height: 180px;
   }
 }
+
+/* Feature box mobile glow effect */
+@media (max-width: 768px) {
+  .feature-box-glow::before {
+    opacity: 1 !important;
+    background: radial-gradient(circle 200px at 50% 50%, rgba(38, 152, 205, 0.4) 0%, rgba(38, 152, 205, 0.2) 40%, transparent 80%) !important;
+  }
+}
