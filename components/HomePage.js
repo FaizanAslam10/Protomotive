@@ -1153,7 +1153,7 @@ export default function HomePage() {
     src="https://maps.google.com/maps?q=Plot%20413%2C%20DHA%20Phase%208%20Ex%20Park%20View%20Block%20D%2C%20Lahore&t=&z=15&ie=UTF8&iwloc=&output=embed"
     width="100%"
     height="400"
-    style={{ border: 0, backgroundColor: '#1a1a1a' }}
+    style={{ border: 0, backgroundColor: '#1a1a1a', filter: 'invert(100%) hue-rotate(180deg) contrast(100%)' }}
     allowFullScreen=""
     loading="lazy"
     referrerPolicy="no-referrer-when-downgrade"
