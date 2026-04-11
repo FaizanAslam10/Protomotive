@@ -1,0 +1,164 @@
+/* Date Availability Styles */
+
+/* Time Slots Container */
+#timeSlots {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+/* Time Slot Buttons */
+.time-slot-btn {
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    min-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Available Time Slot Hover */
+.time-slot-btn.available:hover {
+    border-color: #2698cd;
+    background: #f0f9ff;
+    color: #2698cd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(38, 152, 205, 0.2);
+}
+
+/* Selected Time Slot */
+.time-slot-btn.selected {
+    border-color: #2698cd;
+    background: #2698cd;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(38, 152, 205, 0.3);
+}
+
+/* Focus States for Accessibility */
+.time-slot-btn:focus {
+    outline: none;
+    ring: 2px solid #2698cd;
+    ring-offset: 2px;
+}
+
+/* Messages */
+.loading-message,
+.error-message,
+.no-slots-message,
+.placeholder-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.loading-message {
+    background: #f8fafc;
+    color: #64748b;
+    border: 1px dashed #cbd5e1;
+}
+
+.error-message {
+    background: #fef2f2;
+    color: #2698cd;
+    border: 1px solid #fecaca;
+}
+
+.no-slots-message {
+    background: #fffbeb;
+    color: #d97706;
+    border: 1px solid #fed7aa;
+}
+
+.placeholder-message {
+    background: #f8fafc;
+    color: #9ca3af;
+    border: 1px dashed #d1d5db;
+}
+
+/* Loading Indicator */
+#loadingSlots {
+    text-align: center;
+    padding: 20px;
+    color: #6b7280;
+}
+
+/* Date Input Styling */
+#bookingDate {
+    width: 100%;
+    padding: 12px 16px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #374151;
+    background: #ffffff;
+    transition: border-color 0.2s ease-in-out;
+}
+
+#bookingDate:focus {
+    outline: none;
+    border-color: #2698cd;
+    box-shadow: 0 0 0 3px rgba(38, 152, 205, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #timeSlots {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+    }
+    
+    .time-slot-btn {
+        padding: 10px 12px;
+        font-size: 13px;
+        min-height: 44px;
+    }
+}
+
+@media (max-width: 480px) {
+    #timeSlots {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px;
+    }
+    
+    .time-slot-btn {
+        padding: 8px 10px;
+        font-size: 12px;
+        min-height: 40px;
+    }
+}
+
+/* Animation for smooth transitions */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.time-slot-btn {
+    animation: fadeInUp 0.3s ease-out;
+}
+
+/* Stagger animation for multiple buttons */
+.time-slot-btn:nth-child(1) { animation-delay: 0.05s; }
+.time-slot-btn:nth-child(2) { animation-delay: 0.1s; }
+.time-slot-btn:nth-child(3) { animation-delay: 0.15s; }
+.time-slot-btn:nth-child(4) { animation-delay: 0.2s; }
+.time-slot-btn:nth-child(5) { animation-delay: 0.25s; }
+.time-slot-btn:nth-child(6) { animation-delay: 0.3s; }

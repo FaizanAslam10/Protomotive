@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation - Precision Auto Center</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #dc2626, #b91c1c);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .confirmation-message {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .confirmation-message h2 {
+            color: #15803d;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        .confirmation-message p {
+            color: #166534;
+            font-size: 16px;
+        }
+        
+        .booking-details {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        
+        .booking-details h3 {
+            color: #dc2626;
+            margin-bottom: 20px;
+            font-size: 20px;
+            border-bottom: 2px solid #dc2626;
+            padding-bottom: 10px;
+        }
+        
+        .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+        
+        .detail-label {
+            font-weight: bold;
+            color: #475569;
+            flex: 1;
+        }
+        
+        .detail-value {
+            color: #1e293b;
+            flex: 2;
+            text-align: right;
+        }
+        
+        .service-highlight {
+            background: #dc2626;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        
+        .price-highlight {
+            font-size: 18px;
+            font-weight: bold;
+            color: #dc2626;
+        }
+        
+        .important-info {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+        
+        .important-info h4 {
+            color: #d97706;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        
+        .important-info ul {
+            margin-left: 20px;
+            color: #92400e;
+        }
+        
+        .important-info li {
+            margin-bottom: 5px;
+        }
+        
+        .contact-info {
+            background: #1e293b;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .contact-info h4 {
+            margin-bottom: 15px;
+            color: #dc2626;
+            font-size: 18px;
+        }
+        
+        .contact-details {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            flex: 1;
+            min-width: 150px;
+        }
+        
+        .contact-item p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        
+        .contact-item strong {
+            color: #dc2626;
+        }
+        
+        .footer {
+            background: #111827;
+            color: #9ca3af;
+            padding: 20px;
+            text-align: center;
+            font-size: 12px;
+        }
+        
+        .footer p {
+            margin: 5px 0;
+        }
+        
+        .social-links {
+            margin: 15px 0;
+        }
+        
+        .social-links a {
+            color: #dc2626;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background: #b91c1c;
+        }
+        
+        @media (max-width: 600px) {
+            .email-container {
+                margin: 0;
+                box-shadow: none;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+            
+            .booking-details {
+                padding: 15px;
+            }
+            
+            .contact-details {
+                flex-direction: column;
+            }
+            
+            .detail-row {
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .detail-value {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>PRECISION AUTO CENTER</h1>
+            <p>Your Booking Has Been Confirmed!</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="content">
+            <div class="greeting">
+                Hello {{CUSTOMER_NAME}},
+            </div>
+            
+            <div class="confirmation-message">
+                <h2>✅ Booking Confirmed!</h2>
+                <p>Thank you for choosing Precision Auto Center. Your appointment has been successfully scheduled and we're excited to provide you with exceptional automotive care.</p>
+            </div>
+            
+            <!-- Booking Details -->
+            <div class="booking-details">
+                <h3>📋 Your Appointment Details</h3>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Service:</span>
+                    <span class="detail-value"><span class="service-highlight">{{SERVICE_NAME}}</span></span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Date & Time:</span>
+                    <span class="detail-value"><strong>{{APPOINTMENT_DATE}} at {{APPOINTMENT_TIME}}</strong></span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Duration:</span>
+                    <span class="detail-value">{{SERVICE_DURATION}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Customer:</span>
+                    <span class="detail-value">{{CUSTOMER_NAME}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Phone:</span>
+                    <span class="detail-value">{{CUSTOMER_PHONE}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Email:</span>
+                    <span class="detail-value">{{CUSTOMER_EMAIL}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Vehicle:</span>
+                    <span class="detail-value">{{VEHICLE_INFO}}</span>
+                </div>
+                
+                <div class="detail-row">
+                    <span class="detail-label">Estimated Price:</span>
+                    <span class="detail-value"><span class="price-highlight">{{SERVICE_PRICE}}</span></span>
+                </div>
+                
+                {{#SPECIAL_REQUESTS}}
+                <div class="detail-row">
+                    <span class="detail-label">Special Requests:</span>
+                    <span class="detail-value">{{SPECIAL_REQUESTS}}</span>
+                </div>
+                {{/SPECIAL_REQUESTS}}
+            </div>
+            
+            <!-- Important Information -->
+            <div class="important-info">
+                <h4>📝 Important Information</h4>
+                <ul>
+                    <li>Please arrive 10-15 minutes before your scheduled appointment</li>
+                    <li>Bring your vehicle registration and any relevant documentation</li>
+                    <li>If you need to reschedule, please call us at least 24 hours in advance</li>
+                    <li>Our team will contact you if any additional services are recommended</li>
+                    <li>Payment is due upon completion of services</li>
+                </ul>
+            </div>
+            
+            <div style="text-align: center;">
+                <a href="tel:+19056703484" class="cta-button">📞 Call Us: (905) 670-3484</a>
+            </div>
+            
+            <p style="margin-top: 30px; color: #666; font-size: 14px;">
+                We appreciate your business and look forward to serving you. If you have any questions or concerns, please don't hesitate to contact us.
+            </p>
+        </div>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h4>📍 Contact Information</h4>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <p><strong>Phone:</strong></p>
+                    <p>(905) 670-3484</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Address:</strong></p>
+                    <p>123 Auto Center Dr<br>Precision City, ON</p>
+                </div>
+                <div class="contact-item">
+                    <p><strong>Hours:</strong></p>
+                    <p>Mon-Fri: 8AM-6PM<br>Sat: 9AM-4PM</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <div class="social-links">
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Google Reviews</a>
+            </div>
+            <p>&copy; {{CURRENT_YEAR}} Precision Auto Center. All rights reserved.</p>
+            <p>This is an automated confirmation email. Please do not reply to this email.</p>
+            <p>If you did not make this booking, please contact us immediately.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+{
+  "name": "precision-auto-nextjs",
+  "version": "1.0.0",
+  "description": "Precision Auto Center - Next.js React Version",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "^1.0.1",
+    "next": "^15.5.2",
+    "pg": "^8.16.3",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "resend": "^6.0.3"
+  },
+  "keywords": [
+    "nextjs",
+    "booking",
+    "automotive",
+    "react"
+  ],
+  "author": "Precision Auto Center",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/pg": "^8.15.5"
+  }
+}

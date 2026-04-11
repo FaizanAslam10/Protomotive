@@ -1,0 +1,2061 @@
+/* Original Service Toggle Button Styles */
+.service-toggle-btn {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid #2698cd;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    min-width: 160px;
+    display: inline-block;
+    text-align: center;
+}
+
+.service-toggle-btn:hover {
+    background: rgba(38, 152, 205, 0.1);
+    transform: translateY(-2px);
+}
+
+.service-toggle-btn.active {
+    background: #2698cd;
+    box-shadow: 0 0 20px rgba(38, 152, 205, 0.6), 0 0 40px rgba(38, 152, 205, 0.4);
+    color: white;
+    border: 2px solid #2698cd;
+}
+
+/* Service Containers */
+.service-content {
+    display: none;
+    background: #1f1f1f;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border: 1px solid #333;
+}
+
+.service-content.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.services-container {
+    min-height: 600px;
+    padding: 80px 0;
+}
+
+/* SERVICE CONTAINER STYLES */
+.service-container {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: 320px;
+    max-height: 320px;
+    height: 320px;
+    margin-bottom: 30px;
+    overflow: visible;
+    transition: all 0.3s ease;
+}
+
+/* Prevent overlap during responsive transitions */
+.service-containers .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.service-containers .row > div {
+    padding: 0 15px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+/* NEW GRAY CONTAINER STYLES */
+.service-card-new {
+    background: #2698cd !important;
+    border: none;
+    transition: all 0.3s ease;
+    overflow: visible;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 60px; /* space for badge */
+    border-radius: 10px;
+    min-height: 320px;
+    max-height: 320px;
+    height: 320px;
+    min-width: 350px;
+}
+
+.service-card-new:hover {
+    transform: translateY(-5px);
+}
+
+/* Badge Container */
+.service-badge {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #2698cd;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+.service-badge img {
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card-new:hover .service-badge img {
+    transform: scale(1.1);
+}
+
+/* Service Title */
+.service-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    color: white !important;
+    text-align: left;
+    margin-top: 0;
+}
+
+/* Service Subtitle Line */
+.service-subtitle {
+    width: 40px;
+    height: 3px;
+    background: #2698cd;
+    border-radius: 2px;
+}
+
+/* Service Description */
+.service-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc !important;
+    margin-bottom: 25px;
+    flex-grow: 1;
+    text-align: left;
+}
+
+/* Button Styles */
+.more-details-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.more-details-btn:hover {
+    background: #2698cd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(38, 152, 205, 0.3);
+}
+
+.book-now-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+.book-now-btn:hover {
+    background: #2698cd;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(38, 152, 205, 0.3);
+}
+
+/* Service Detail Section */
+.service-detail-section {
+    padding: 80px 0;
+    margin-top: 0;
+    animation: fadeInUp 0.6s ease-in-out;
+}
+
+.service-detail-section .feature-box-glow {
+    transition: all 0.3s ease;
+}
+
+.service-detail-section .feature-box-glow:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(38, 152, 205, 0.1);
+}
+
+.close-detail-btn {
+    background: transparent;
+    color: #2698cd;
+    border: 2px solid #2698cd;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.close-detail-btn:hover {
+    background: #2698cd;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(38, 152, 205, 0.3);
+}
+
+/* Background Colors */
+.bg-gray {
+    background-color: #333333 !important;
+}
+
+/* Hover overlay effect */
+.service-card-new::before {
+
+}
+
+.service-card-new:hover::before {
+    opacity: 1;
+}
+
+/* Ensure proper z-index for content */
+.service-card-new > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* BOOKING MODAL STYLES */
+.booking-modal {
+    display: none;
+    position: relative;
+    width: 100%;
+    background: transparent;
+    z-index: 100;
+}
+
+/* SERVICE DETAIL MODAL CONTENT - Custom class to avoid 3-column grid */
+.service-detail-content {
+    display: block;
+    width: 100%;
+    padding: 30px;
+    min-height: 500px;
+    overflow-y: auto;
+    border-radius: 0 0 15px 15px;
+    background: #2a2a2a;
+}
+
+/* Ensure both service detail layout types have consistent minimum height */
+.service-detail-content .service-full-description {
+    min-height: 400px;
+}
+
+/* Additional pricing styling */
+.additional-pricing {
+    background: rgba(38, 152, 205, 0.1);
+    border: 1px solid rgba(38, 152, 205, 0.3);
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 0 auto;
+    max-width: 180px;
+    margin-top: 0;
+}
+
+.additional-pricing .text-white {
+    color: #2698cd !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+}
+
+.additional-pricing div {
+    margin-bottom: 2px !important;
+}
+
+.additional-pricing div:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* Default desktop layout */
+.service-detail-two-column {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.service-detail-column {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.service-included-column {
+    flex: 1;
+}
+
+/* Nested column layouts */
+.exterior-interior-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.exterior-column,
+.interior-column {
+    flex: 1;
+}
+
+.specifications-features-columns {
+    display: flex;
+    gap: 10px;
+}
+
+.specifications-column,
+.features-column {
+    flex: 1;
+}
+
+/* Responsive service detail modal layout - Mobile and Tablet */
+@media screen and (max-width: 768px) {
+    /* Make main two-column layout stack on mobile - force override inline styles */
+    .service-detail-two-column {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    /* Ensure proper ordering and full width: Service Details first, What's Included second */
+    .service-detail-column {
+        order: 1 !important;
+        flex: none !important;
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        margin-bottom: 20px !important;
+    }
+
+    .service-included-column {
+        order: 2 !important;
+        flex: none !important;
+        width: 100% !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Stack Exterior/Interior columns on mobile */
+    .exterior-interior-columns {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .exterior-column,
+    .interior-column {
+        flex: none !important;
+        width: 100% !important;
+    }
+
+    /* Stack PPF specifications/features on mobile */
+    .specifications-features-columns {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .specifications-column,
+    .features-column {
+        flex: none !important;
+        width: 100% !important;
+    }
+
+    /* Adjust service detail content padding on mobile */
+    .service-detail-content {
+        padding: 20px 15px !important;
+        min-height: auto !important;
+    }
+
+    /* Remove minimum height on mobile */
+    .service-detail-content .service-full-description {
+        min-height: auto !important;
+    }
+
+    /* Adjust typography for mobile */
+    .service-detail-content h3 {
+        font-size: 18px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .service-detail-content h4 {
+        font-size: 16px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .service-detail-content h5 {
+        font-size: 14px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .service-detail-content p {
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+    }
+
+    .service-detail-content li {
+        font-size: 12px !important;
+        margin-bottom: 2px !important;
+    }
+}
+
+/* Additional mobile responsive rules for smaller screens */
+@media screen and (max-width: 991px) {
+    /* Force stacking on tablets and smaller */
+    .service-detail-two-column {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+        width: 100% !important;
+    }
+
+    .service-detail-column,
+    .service-included-column {
+        flex: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .service-detail-column {
+        order: 1 !important;
+        margin-bottom: 20px !important;
+    }
+
+    .service-included-column {
+        order: 2 !important;
+    }
+}
+
+.booking-modal.active {
+    display: block;
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+.booking-container {
+    background: #2a2a2a;
+    border-radius: 15px;
+    width: 100%;
+    max-width: none;
+    overflow: visible;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    border: 2px solid #2698cd;
+    height: auto;
+    min-height: fit-content;
+}
+
+.booking-header {
+    background: #2698cd;
+    padding: 20px 30px;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.booking-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.booking-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    min-height: fit-content;
+    overflow-y: auto;
+    border-radius: 0 0 15px 15px;
+}
+
+/* Calendar Section */
+.calendar-section {
+    padding: 20px;
+    border-right: 1px solid #444;
+    min-height: fit-content;
+    height: auto;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.calendar-nav {
+    background: none;
+    border: none;
+    color: #2698cd;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.calendar-nav:hover {
+    color: #2698cd;
+}
+
+.month-year {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.calendar-day-header {
+    text-align: center;
+    padding: 10px 5px;
+    font-weight: bold;
+    color: #888;
+    font-size: 12px;
+}
+
+.calendar-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    color: #ccc;
+}
+
+.calendar-day:hover {
+    background: rgba(38, 152, 205, 0.2);
+}
+
+.calendar-day.available {
+    color: white;
+    background: rgba(38, 152, 205, 0.118);
+    border: 1px solid #2698cd;
+}
+
+.calendar-day.available:hover {
+    background: rgba(38, 152, 205, 0.4);
+}
+
+.calendar-day.selected {
+    background: #2698cd;
+    color: white;
+}
+
+.calendar-day.today {
+    border: 2px solid #2698cd;
+}
+
+.calendar-day.disabled {
+    color: #555;
+    cursor: not-allowed;
+}
+
+/* Empty calendar cells (overlapping dates from other months) */
+.calendar-day:empty,
+.calendar-day:not(.available):not(.disabled) {
+    background: transparent;
+    color: transparent;
+    cursor: default;
+}
+
+.calendar-day:not(.available):not(.disabled):hover {
+    background: transparent;
+}
+
+/* Time Slots Section */
+.time-section {
+    padding: 20px;
+    border-right: 1px solid #444;
+    min-height: fit-content;
+    height: auto;
+}
+
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.time-slot {
+    background: #3a3a3a;
+    border: 1px solid #555;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.time-slot:hover {
+    background: rgba(38, 152, 205, 0.2);
+    border-color: #2698cd;
+}
+
+.time-slot.selected {
+    background: #2698cd;
+    border-color: #2698cd;
+}
+
+.time-slot.booked {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    position: relative;
+}
+
+.time-slot.booked::after {
+    content: '✗';
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    color: #2698cd;
+    font-size: 12px;
+}
+
+/* Service Details Section */
+.details-section {
+    padding: 20px;
+    background: #333;
+    border-radius: 0 0 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: fit-content;
+    height: auto;
+}
+
+.service-info {
+    background: #2a2a2a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.service-info h3 {
+    color: #2698cd;
+    margin-bottom: 10px;
+}
+
+.service-info p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.booking-form {
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #3a3a3a;
+    color: white;
+    font-size: 14px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2698cd;
+    box-shadow: 0 0 0 2px rgba(38, 152, 205, 0.2);
+}
+
+.confirm-booking-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.confirm-booking-btn:hover {
+    background: #1f7fb0;
+    transform: translateY(-2px);
+}
+
+.confirm-booking-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.booking-summary {
+    background: #1a1a1a;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #2698cd;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+.summary-value {
+    color: white;
+    font-weight: 500;
+}
+
+/* Loading and Success States */
+.loading {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+}
+
+.success-message {
+    display: none;
+    background: #22c55e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.error-message {
+    display: none;
+    background: #2698cd;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Next Button Container */
+.next-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.next-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    min-width: 120px;
+}
+
+.next-btn:hover {
+    background: #1f7fb072;
+    transform: translateY(-2px);
+}
+
+.next-btn:disabled,
+.next-btn.disabled {
+    background: #555;
+    cursor: not-allowed;
+    transform: none;
+    opacity: 0.6;
+}
+
+/* Booking Form Styles */
+.booking-form-content {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    min-height: fit-content;
+    background: #2a2a2a;
+    grid-column: 1 / -1; /* Span all columns */
+    width: 100%;
+    max-width: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.booking-summary-header {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #2698cd;
+}
+
+.booking-summary-header h3 {
+    color: #2698cd;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.booking-summary-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.customer-form-section {
+    background: #333;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.customer-form-section h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.customer-info-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: white;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background: #3a3a3a;
+    color: white;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2698cd;
+    box-shadow: 0 0 0 2px rgba(38, 152, 205, 0.2);
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.back-btn {
+    background: transparent;
+    color: #2698cd;
+    border: 2px solid #2698cd;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.back-btn:hover {
+    background: #2698cd95;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.confirm-booking-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    flex: 1;
+    max-width: 250px;
+}
+
+.confirm-booking-btn:hover {
+    background: #2698cd70;
+    transform: translateY(-2px);
+}
+
+.booking-messages {
+    margin-top: 20px;
+}
+
+.booking-messages .success-message,
+.booking-messages .error-message {
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking-messages .success-message {
+    background: #22c55e;
+    color: white;
+}
+
+.booking-messages .error-message {
+    background: #2698cd;
+    color: white;
+}
+
+.booking-messages .loading {
+    text-align: center;
+    padding: 20px;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking-messages .loading i {
+    font-size: 24px;
+    color: #2698cd;
+}
+
+/* Responsive adjustments for form */
+@media (max-width: 768px) {
+    .booking-form-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .confirm-booking-btn {
+        max-width: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .booking-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .calendar-section,
+    .time-section {
+        border-right: none;
+        border-bottom: 1px solid #444;
+    }
+    
+    .details-section {
+        border-radius: 0 0 15px 15px;
+    }
+    
+    /* Service cards improvements for tablet */
+    .service-container {
+        min-height: 300px;
+    }
+    
+    .service-card-new {
+        margin-left: 50px;
+        padding: 25px 20px;
+    }
+    
+    .service-badge {
+        width: 100px;
+        height: 100px;
+    }
+
+    .service-badge img {
+        width: 88px;
+        height: 88px;
+    }
+    
+    .service-title {
+        font-size: 17px;
+    }
+    
+    .service-description {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    
+    /* Service toggle buttons for tablet */
+    .service-toggle-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+        min-width: 150px;
+        margin: 5px;
+    }
+}
+
+    
+    /* Service buttons mobile */
+    .service-toggle-btn {
+        padding: 12px 20px;
+        font-size: 14px;
+        min-width: 160px;
+        margin: 8px;
+        border-radius: 8px;
+    }
+    
+    /* Services container mobile */
+    .services-container {
+        padding: 40px 0;
+    }
+
+    /* Booking modal mobile */
+    .time-slots {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .time-slot {
+        padding: 18px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    .booking-container {
+        margin: 5px;
+        border-radius: 12px;
+    }
+    
+    .booking-header {
+        padding: 20px;
+        border-radius: 12px 12px 0 0;
+    }
+    
+    .booking-title {
+        font-size: 20px;
+    }
+    
+    .calendar-section,
+    .time-section,
+    .details-section {
+        padding: 25px 20px;
+    }
+    
+    .calendar-day {
+        padding: 12px;
+        font-size: 14px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    /* Form improvements mobile */
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px; /* Prevent zoom on iOS */
+        padding: 15px;
+        border-radius: 8px;
+    }
+    
+    .confirm-booking-btn {
+        padding: 18px 30px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+    
+    /* Better touch targets */
+    .close-btn {
+        font-size: 28px;
+        padding: 10px;
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+
+    
+    .more-details-btn,
+    .book-now-btn {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+    
+    /* Small mobile booking modal */
+    .booking-container {
+        margin: 2px;
+        border-radius: 10px;
+    }
+    
+    .booking-header {
+        padding: 15px;
+    }
+    
+    .booking-title {
+        font-size: 18px;
+    }
+    
+    .calendar-section,
+    .time-section,
+    .details-section {
+        padding: 20px 15px;
+    }
+    
+    .time-slot {
+        padding: 15px;
+        font-size: 15px;
+    }
+    
+    .calendar-day {
+        padding: 10px;
+        font-size: 13px;
+    }
+    
+    .section-title {
+        font-size: 15px;
+    }
+    
+    /* Form adjustments for small screens */
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+    }
+    
+    .confirm-booking-btn {
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+    
+    /* Services container spacing */
+    .services-container {
+        padding: 30px 0;
+    }
+
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        max-height: 1000px;
+    }
+}
+
+/* Booking Form Styles */
+.booking-form-content {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+}
+
+.customer-form-section {
+    flex: 1;
+    max-width: 60%;
+}
+
+.booking-summary-column {
+    flex: 0 0 35%;
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 25px;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.customer-info-form {
+    background: #2a2a2a;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    color: white;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2698cd;
+    background: #222;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #888;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.back-btn,
+.confirm-booking-btn {
+    background: #2698cd;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    min-width: 120px;
+}
+
+.back-btn {
+    background: #666;
+}
+
+.back-btn:hover {
+    background: #777;
+    transform: translateY(-1px);
+}
+
+.confirm-booking-btn:hover {
+    background: #1f7fb0;
+    transform: translateY(-1px);
+}
+
+.confirm-booking-btn:disabled {
+    background: #555;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.booking-summary-header h3 {
+    color: white;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.summary-details {
+    margin-bottom: 25px;
+}
+
+.summary-details .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+}
+
+.summary-details .summary-item:last-child {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #2698cd;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid #444;
+}
+
+.summary-details .summary-item span:first-child {
+    color: #aaa;
+}
+
+.summary-details .summary-item .summary-value {
+    color: white;
+    font-weight: 600;
+}
+
+.booking-messages {
+    margin-top: 25px;
+}
+
+.booking-messages .success-message,
+.booking-messages .error-message,
+.booking-messages .loading {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.booking-messages .success-message {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    text-align: center;
+}
+
+.booking-messages .error-message {
+    background: linear-gradient(135deg, #2698cd, #1f7fb0);
+    color: white;
+    text-align: center;
+}
+
+.booking-messages .loading {
+    background: #2a2a2a;
+    color: #ccc;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.booking-messages i {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.booking-messages .fa-spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Additional Mobile Optimizations */
+@media (max-width: 480px) {
+    /* Extra small screens */
+    .service-toggle-btn {
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+        text-align: center;
+    }
+    
+    .service-card-new {
+        padding: 20px 10px;
+    }
+    
+    .booking-container {
+        margin: 0;
+        border-radius: 0;
+        height: auto;
+    }
+    
+    .booking-header {
+        border-radius: 0;
+    }
+    
+    .booking-content {
+        border-radius: 0;
+    }
+}
+
+/* Landscape orientation improvements */
+@media (max-width: 768px) and (orientation: landscape) {
+    .services-container {
+        padding: 20px 0;
+    }
+    
+    .service-container {
+        min-height: 200px;
+    }
+    
+    .booking-container {
+        height: auto;
+    }
+}
+
+/* Touch improvements */
+@media (hover: none) and (pointer: coarse) {
+    /* Touch devices */
+    .service-toggle-btn:hover {
+        transform: none;
+    }
+    
+    .service-card-new:hover {
+        transform: none;
+    }
+    
+    .time-slot:hover {
+        background: rgba(38, 152, 205, 0.1);
+    }
+    
+    .calendar-day:hover {
+        background: rgba(38, 152, 205, 0.1);
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+    .service-badge img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Mobile Button Text Alignment Fix */
+@media (max-width: 768px) {
+    .service-actions .btn-main {
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .service-actions .btn-main span {
+        text-align: center !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .book-now-btn {
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .book-now-btn span {
+        text-align: center !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .back-btn, .confirm-booking-btn, .next-btn {
+        text-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .back-btn span, .confirm-booking-btn span, .next-btn span {
+        text-align: center !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    /* Mobile-only: Move additional pricing pills to new line */
+    .additional-pricing-pill {
+        display: block !important;
+        margin-top: 8px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 6px 12px !important;
+        font-size: 11px !important;
+        width: fit-content !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+/* Enhanced Mobile and Tablet Responsive Styles */
+
+/* Page Header and Layout Responsive Improvements */
+@media (max-width: 1200px) {
+    .jarallax .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .spacer-double {
+        padding: 60px 0;
+    }
+    
+    .subtitle {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Services containers responsive improvements */
+@media (max-width: 768px) {
+    .service-containers {
+        padding: 20px 10px;
+        overflow: hidden; /* Prevent horizontal scroll */
+    }
+    
+    /* Ensure proper spacing between service rows */
+    .row.g-4 {
+        margin: 0 -5px;
+    }
+    
+    .row.g-4 > * {
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 992px) {
+    .spacer-double {
+        padding: 40px 0;
+    }
+    
+    .subtitle {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    
+    .jarallax .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .spacer-double {
+        padding: 30px 0;
+    }
+    
+    .subtitle {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .jarallax .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    /* Page title improvements for mobile */
+    .jarallax h1,
+    .jarallax h2 {
+        font-size: 24px;
+        line-height: 1.3;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .spacer-double {
+        padding: 20px 0;
+    }
+    
+    .subtitle {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+    
+    .jarallax h1,
+    .jarallax h2 {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+}
+
+/* Bootstrap Responsive Grid Overrides for Service Containers */
+
+/* Force immediate responsive behavior and prevent overlapping */
+.service-containers .row > div {
+    flex: 0 0 auto;
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Immediate breakpoint enforcement */
+.service-containers .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+/* Additional overlap prevention */
+.service-container {
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.service-card-new {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+/* Large Desktop: 3 columns (1200px and up) */
+@media (min-width: 1200px) {
+    .service-containers .row > div {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .service-container {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+    }
+
+    .service-card-new {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+        min-width: 300px;
+        margin-left: 60px;
+        padding-left: 70px;
+    }
+
+    .service-badge {
+        width: 120px;
+        height: 120px;
+    }
+
+    .service-badge img {
+        width: 115px;
+        height: 115px;
+    }
+}
+
+/* Medium screens and tablets: 2 columns (800px to 1199px) - Earlier transition */
+@media (min-width: 800px) and (max-width: 1199.98px) {
+    .service-containers .row > div {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .service-container {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+        margin-bottom: 25px;
+    }
+
+    .service-card-new {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+        min-width: 250px;
+        margin-left: 45px;
+        padding-left: 55px;
+        padding: 18px 12px 18px 55px;
+    }
+
+    .service-badge {
+        width: 95px;
+        height: 95px;
+    }
+
+    .service-badge img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .service-title {
+        font-size: 15px;
+    }
+
+    .service-description {
+        font-size: 12px;
+    }
+
+    .service-toggle-btn {
+        padding: 9px 10px;
+        font-size: 11px;
+        min-width: 110px;
+        margin: 2px;
+    }
+}
+
+/* Small screens and mobile: 1 column (below 800px) */
+@media (max-width: 799.98px) {
+    .service-containers .row > div {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .service-container {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+        margin-bottom: 20px;
+        padding-top: 50px; /* Reduced space for smaller badge */
+    }
+
+    .service-card-new {
+        height: 320px;
+        max-height: 320px;
+        min-height: 320px;
+        min-width: auto;
+        margin-left: 0;
+        padding: 25px 15px;
+        text-align: center;
+    }
+
+    .service-badge {
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px; /* Reduced from 90px */
+        height: 70px; /* Reduced from 90px */
+    }
+
+    .service-badge img {
+        width: 62px; /* Increased size */
+        height: 62px; /* Increased size */
+    }
+
+    .service-title {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+
+    .service-description {
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+    .service-toggle-btn {
+        flex: 1 1 calc(50% - 4px);
+        min-width: auto;
+        max-width: 180px;
+        padding: 12px 8px;
+        font-size: 11px;
+        margin: 2px;
+    }
+}
+
+/* Enhanced Mobile Layout (768px and below) */
+@media (max-width: 768px) {
+    .service-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        padding: 0 10px;
+    }
+    
+    .service-toggle-btn {
+        flex: 1 1 calc(50% - 4px);
+        min-width: auto;
+        max-width: 180px;
+        padding: 12px 8px;
+        font-size: 11px;
+        margin: 2px;
+        text-align: center;
+    }
+    
+    /* Service cards mobile layout - Fixed positioning */
+    .service-container {
+        margin-bottom: 40px;
+        min-height: 200px;
+        padding-top: 60px; /* Add padding to accommodate badge */
+        overflow: visible;
+    }
+    
+    .service-card-new {
+        margin-left: 0;
+        margin-top: 0; /* Remove margin-top since we use padding on container */
+        padding: 25px 15px;
+        text-align: center;
+        min-height: 200px;
+        position: relative;
+    }
+    
+    .service-badge {
+        position: absolute;
+        top: -25px; /* Reduced negative value to prevent overflow */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px; /* Reduced from 90px */
+        height: 70px; /* Reduced from 90px */
+        z-index: 2; /* Ensure proper layering */
+    }
+
+    .service-badge img {
+        width: 62px; /* Increased size */
+        height: 62px; /* Increased size */
+    }
+    
+    .service-title {
+        text-align: center;
+        margin-top: 15px;
+    }
+    
+    .service-description {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+/* Small Mobile Improvements (576px and below) */
+@media (max-width: 576px) {
+    .service-toggle-btn {
+        flex: 1 1 100%;
+        max-width: none;
+        margin: 5px 0;
+        padding: 14px 15px;
+        font-size: 12px;
+    }
+    
+    .service-container {
+        margin-bottom: 35px;
+        min-height: 180px;
+        padding-top: 40px; /* Further reduced padding for smaller badge */
+    }
+    
+    .service-card-new {
+        padding: 20px 10px;
+        margin-top: 0; /* Remove margin-top */
+        min-height: 180px;
+    }
+    
+    .service-badge {
+        width: 60px; /* Further reduced for small mobile */
+        height: 60px; /* Further reduced for small mobile */
+        top: -20px; /* Reduced negative value */
+    }
+
+    .service-badge img {
+        width: 52px; /* Increased size */
+        height: 52px; /* Increased size */
+    }
+    
+    .service-title {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+    
+    .service-description {
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    
+    .book-now-btn {
+        padding: 10px 15px !important;
+        font-size: 11px !important;
+    }
+}
+
+/* Extra Small Mobile (480px and below) */
+@media (max-width: 480px) {
+    .service-buttons {
+        padding: 0 5px;
+    }
+    
+    .service-containers {
+        padding: 15px 5px;
+    }
+    
+    .service-card-new {
+        padding: 15px 8px;
+        border-radius: 8px;
+    }
+    
+    .service-title {
+        font-size: 13px;
+    }
+    
+    .service-description {
+        font-size: 11px;
+    }
+}
+
+/* Landscape Mobile Optimizations */
+@media (max-width: 768px) and (orientation: landscape) {
+    .service-toggle-btn {
+        padding: 8px 12px;
+        font-size: 10px;
+    }
+    
+    .service-container {
+        min-height: 160px;
+        margin-bottom: 25px;
+        padding-top: 35px; /* Reduced padding for smaller badge in landscape */
+    }
+    
+    .service-card-new {
+        min-height: 160px;
+        padding: 15px 10px;
+        margin-top: 0; /* Remove margin-top */
+    }
+    
+    .service-badge {
+        width: 55px; /* Further reduced for landscape mobile */
+        height: 55px; /* Further reduced for landscape mobile */
+        top: -18px; /* Reduced negative value for landscape */
+    }
+
+    .service-badge img {
+        width: 48px; /* Increased size */
+        height: 48px; /* Increased size */
+    }
+}
+
+/* Responsive Design for Booking Form */
+@media (max-width: 768px) {
+    .booking-form-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .customer-form-section,
+    .booking-summary-column {
+        max-width: 100%;
+        flex: none;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .form-actions {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    
+    .back-btn,
+    .confirm-booking-btn {
+        width: 100%;
+    }
+}
