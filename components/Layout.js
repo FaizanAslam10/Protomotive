@@ -226,7 +226,7 @@ export default function Layout({ children, title = "Precision Auto Center", show
         {/* Preloader */}
         <div id="de-loader">
           <div className="loader-content">
-            <img src="/images/center-logo-shield.png" alt="Logo" width="321" height="275" />
+            <img src="/images/loadinglogo.png" alt="Logo" width="321" height="275" />
             <div className="lds-roller">
               <div></div><div></div><div></div><div></div>
               <div></div><div></div><div></div><div></div>
