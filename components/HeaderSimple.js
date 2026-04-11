@@ -268,7 +268,7 @@ export default function HeaderSimple() {
           scrollbarWidth: 'thin',
           scrollbarColor: '#ffffff33 transparent'
         }}>
-          <img src="/images/logo-white.webp" className="w-150px" alt="" />
+          <img src="/images/protologo.png" className="w-150px" alt="Protomotive Logo" width="189" height="64" />
           <div className="spacer-30-line"></div>
 
           <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>Our Services</h5>
@@ -284,19 +284,18 @@ export default function HeaderSimple() {
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
 
           <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>Contact Us</h5>
-          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-clock-time me-2 op-5"></i>Monday - Friday 10.00 am - 6.00 pm</div>
-          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-location-pin me-2 op-5"></i><a href="https://maps.app.goo.gl/7cBt29ZrMHADxvjQ9" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff', textDecoration: 'underline' }}>Get Directions</a></div>
-          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-envelope me-2 op-5"></i><a href="mailto:info@precisionautocenter.ca" style={{ color: '#ffffff', textDecoration: 'underline' }}>info@precisionautocenter.ca</a></div>
-
-          <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
-
-          <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>About Us</h5>
+          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-clock-time me-2 op-5"></i>Monday - Saturday 9.00 am - 10.00 pm</div>
+          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-phone me-2 op-5"></i><a href="tel:03005005666" style={{ color: '#ffffff', textDecoration: 'none' }}>0300 5005666</a></div>
+          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-location-pin me-2 op-5"></i><a href="https://maps.app.goo.gl/7cBt29ZrMHADxvjQ9" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff', textDecoration: 'underline' }}>Plot 413, DHA Phase 8 - Ex Park View, Lahore</a></div>
+          <div style={{ color: '#ffffff', marginBottom: '10px', visibility: 'visible', opacity: 1 }}><i className="icofont-envelope me-2 op-5"></i><a href="mailto:info@protomotive.pk" style={{ color: '#ffffff', textDecoration: 'underline' }}>info@protomotive.pk</a></div>
+          
+          <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>          <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>About Us</h5>
           <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Protomotive is a unique state of the art auto care facility that provides outstanding customer service. We pride ourselves on the fact that we only trust a combination of the very best materials and the most competent professionals to carry out your chosen service.</p>
 
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
 
           <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>Our Location</h5>
-          <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Visit us at our state-of-the-art facility in Mississauga. We're conveniently located and easily accessible with ample parking for our customers.</p>
+          <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Visit us at our state-of-the-art facility at Plot 413, DHA Phase 8 - Ex Park View Block D, Lahore. We're conveniently located and easily accessible with ample parking for our customers.</p>
 
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
 
