@@ -652,7 +652,7 @@ export default function HomePage() {
               <ServiceCard 
                 id="02"
                 title="VEHICLE WRAP"
-                image="/images/services-2/2.webp"
+                image="/images/wrap.png"
                 description="We wrap it all…. cars, trucks, aircrafts, boats and trailers We perfect every job we do with the highest quality films and highest quality of installation."
                 delay=".2s"
               />
