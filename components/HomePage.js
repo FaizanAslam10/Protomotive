@@ -566,7 +566,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <Layout title="Precision Auto Center - Car Detailing & Services">
+    <Layout title="Protomotive - Car Detailing & Services">
       <div className="no-bottom no-top" id="content">
         <div id="top"></div>
 

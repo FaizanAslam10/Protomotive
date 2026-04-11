@@ -94,7 +94,7 @@ export default function WrapConfiguratorPage() {
   }, []);
   return (
     <div className="wrap-configurator-container">
-      <Layout title="Wrap Configurator - Precision Auto Center">
+      <Layout title="Wrap Configurator - Protomotive">
       <>
         <style jsx global>{`
           body {

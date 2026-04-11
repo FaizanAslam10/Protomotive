@@ -3,7 +3,7 @@ import HeaderSimple from './HeaderSimple';
 import Footer from './Footer';
 import { useEffect, useState } from 'react';
 
-export default function Layout({ children, title = "Precision Auto Center", showPreloader = false }) {
+export default function Layout({ children, title = "Protomotive", showPreloader = false }) {
 
   // Handle preloader visibility when showPreloader changes
   useEffect(() => {

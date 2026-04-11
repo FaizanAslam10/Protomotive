@@ -1374,7 +1374,7 @@ export default function ServicesPage() {
 
   return (
     <div className="services-page-container">
-      <Layout title="Services - Precision Auto Center" showPreloader={loading}>
+      <Layout title="Services - Protomotive" showPreloader={loading}>
       <style jsx global>{`
         body {
           height: auto !important;
