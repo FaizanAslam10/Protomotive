@@ -65,10 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
-        'oil-change': {
+        'maintenance': {
             count: 1,
             services: [
-                { title: 'OIL CHANGE & MAINTENANCE', description: 'Keep your engine running smoothly with our comprehensive oil change and maintenance.', price: 'Contact Us', duration: '1 Hour' },
+                { title: 'MAINTENANCE', description: 'Keep your vehicle running smoothly with our comprehensive maintenance services.', price: 'Contact Us', duration: '1 Hour' },
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },

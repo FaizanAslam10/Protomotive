@@ -138,7 +138,7 @@ export default function Header() {
                       <li><Link href="/services?service=vehicle-wrap">VEHICLE WRAP</Link></li>
                       <li><Link href="/services?service=ceramic-coating">CERAMIC COATING</Link></li>
                       <li><Link href="/services?service=paint-protection-film">PAINT PROTECTION FILM (PPF)</Link></li>
-                      <li><Link href="/services?service=oil-change">OIL CHANGE &amp; MAINTENANCE</Link></li>
+                      <li><Link href="/services?service=maintenance">MAINTENANCE</Link></li>
                       <li><Link href="/services?service=window-tinting">WINDOW TINTING</Link></li>
                     </ul>
                   </li>

@@ -236,13 +236,13 @@ export default function ServicesPage() {
       ],
       gridClass: 'col-12 col-md-6 col-lg-4'
     },
-    'oil-change': {
+    'maintenance': {
       count: 1,
       services: [
         { 
-          title: 'OIL CHANGE & MAINTENANCE', 
-          description: 'Keep your engine running smoothly with our comprehensive oil change and maintenance.', 
-          fullDescription: 'Our rigorous Oil Change and Maintenance service helps ensure the longevity and performance of your vehicle. Using high-quality synthetic or conventional oils based on the manufacturers recommendations, we replace your old oil and filter to protect vital engine components. In addition, we perform a complimentary multi-point inspection including checking vital fluids, tire pressure, and visual inspection of belts and hoses. Stay ahead of potential problems and maintain a smooth, reliable ride.',
+          title: 'MAINTENANCE', 
+          description: 'Keep your vehicle running smoothly with our comprehensive maintenance services.', 
+          fullDescription: 'Our rigorous Maintenance service helps ensure the longevity and performance of your vehicle. From synthetic or conventional oil changes based on manufacturers recommendations to visual inspection of belts and hoses, we protect vital engine components. In addition, we perform a complimentary multi-point inspection including checking vital fluids and tire pressure. Stay ahead of potential problems and maintain a smooth, reliable ride.',
           price: 'Contact Us', 
           duration: '1 Hour' 
         }
@@ -1717,11 +1717,11 @@ export default function ServicesPage() {
                       </div>
                       <div className="col-4 col-md-2">
                         <button
-                          className={`service-toggle-btn w-100 ${currentActiveService === 'oil-change' ? 'active' : ''}`}
-                          data-target="oil-change"
-                          onClick={() => handleServiceToggle('oil-change')}
+                          className={`service-toggle-btn w-100 ${currentActiveService === 'maintenance' ? 'active' : ''}`}
+                          data-target="maintenance"
+                          onClick={() => handleServiceToggle('maintenance')}
                         >
-                          OIL CHANGE & MAINTENANCE
+                          MAINTENANCE
                         </button>
                       </div>
                       <div className="col-4 col-md-2">

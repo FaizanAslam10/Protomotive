@@ -48,7 +48,7 @@ export default function Footer() {
                 <li><a href="/services?service=vehicle-wrap">Vehicle Wraps</a></li>
                 <li><a href="/services?service=ceramic-coating">Ceramic Coating</a></li>
                 <li><a href="/services?service=paint-protection-film">Paint Protection Film (PPF)</a></li>
-                <li><a href="/services?service=oil-change">Oil Change &amp; Maintenance</a></li>
+                <li><a href="/services?service=maintenance">Maintenance</a></li>
                 <li><a href="/services?service=window-tinting">Window Tinting</a></li>
               </ul>
             </div>

@@ -38,7 +38,7 @@ export default function AdminServices() {
     { value: 'vehicle-wrap', label: 'Vehicle Wrap' },
     { value: 'ceramic-coating', label: 'Ceramic Coating' },
     { value: 'paint-protection-film', label: 'Paint Protection Film' },
-    { value: 'oil-change', label: 'Oil Change & Maintenance' },
+    { value: 'maintenance', label: 'Maintenance' },
     { value: 'window-tinting', label: 'Window Tinting' }
   ];
 

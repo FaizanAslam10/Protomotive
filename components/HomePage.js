@@ -675,9 +675,9 @@ export default function HomePage() {
               
               <ServiceCard 
                 id="05"
-                title="OIL CHANGE MAINTENANCE"
+                title="MAINTENANCE"
                 image="/images/services-2/5.webp"
-                description="Regular oil changes maintain your engine's health, ensuring longevity and smooth performance."
+                description="Regular maintenance maintains your engine's health, ensuring longevity and smooth performance."
                 delay=".8s"
               />
               
@@ -1255,7 +1255,7 @@ function ServiceCard({ id, title, image, description, delay }) {
       'VEHICLE WRAP': 'vehicle-wrap', 
       'CERAMIC COATING': 'ceramic-coating',
       'PAINT PROTECTION FILM (PPF)': 'paint-protection-film',
-      'OIL CHANGE MAINTENANCE': 'oil-change-maintenance',
+      'MAINTENANCE': 'maintenance',
       'WINDOW TINTING': 'window-tinting'
     };
     const serviceKey = serviceMap[serviceTitle] || 'detailing';
