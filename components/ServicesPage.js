@@ -726,7 +726,7 @@ export default function ServicesPage() {
 
     return (
       <div className="row g-4 mt-4">
-        {service.services.map((item, index) => {
+        {service.services.slice(0, 1).map((item, index) => {
           const delay = index * 0.2;
           let imageSrc = `images/service-${(index % 6) + 1}.jpg`;
           
@@ -845,7 +845,7 @@ export default function ServicesPage() {
     
     let html = '<div class="row g-4 mt-4">';
     
-    service.services.forEach((item, index) => {
+    service.services.slice(0, 1).forEach((item, index) => {
       const delay = index * 0.2;
       let imageSrc = `images/service-${(index % 6) + 1}.jpg`;
       
