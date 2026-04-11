@@ -65,11 +65,10 @@ document.addEventListener('DOMContentLoaded', function() {
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
-        'powder-coating': {
-            count: 0,
+        'oil-change': {
+            count: 1,
             services: [
-                { title: 'COMING SOON', description: 'Professional refinishing with durable powder coating in various colors and finishes for enhanced appearance.', price: 'TBD', duration: 'TBD' },
-                
+                { title: 'OIL CHANGE & MAINTENANCE', description: 'Keep your engine running smoothly with our comprehensive oil change and maintenance.', price: 'Contact Us', duration: '1 Hour' },
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
@@ -262,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="service-description text-light mb-3">${item.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="service-price text-white fw-bold fs-6">${item.price || 'Contact for Price'}</div>
-                    <button class="book-now-btn btn-main fx-slide btn-sm" data-service="${item.title}" data-price="${item.price}" data-duration="${item.duration}" style="padding: 8px 12px; font-size: 12px;${serviceKey === 'powder-coating' ? ' opacity: 0.5; cursor: not-allowed; pointer-events: none;' : ''}" ${serviceKey === 'powder-coating' ? 'disabled title="Coming Soon"' : ''}>
+                    <button class="book-now-btn btn-main fx-slide btn-sm" data-service="${item.title}" data-price="${item.price}" data-duration="${item.duration}" style="padding: 8px 12px; font-size: 12px;">
                         <span>BOOK NOW</span>
                     </button>
                 </div>

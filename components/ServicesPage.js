@@ -236,15 +236,15 @@ export default function ServicesPage() {
       ],
       gridClass: 'col-12 col-md-6 col-lg-4'
     },
-    'powder-coating': {
-      count: 0,
+    'oil-change': {
+      count: 1,
       services: [
         { 
-          title: 'COMING SOON', 
-          description: 'Professional refinishing with durable powder coating in various colors and finishes for enhanced appearance.', 
-          fullDescription: 'Our upcoming POWDER COATING service will offer professional metal refinishing using durable powder coating technology. This process provides superior protection and appearance compared to traditional liquid paint, with enhanced durability, chemical resistance, and color retention. The service will include surface preparation, media blasting if needed, and application of high-quality powder coating in a wide range of colors and finishes. Perfect for wheels, trim pieces, brackets, and other metal components that need both protection and aesthetic enhancement. Stay tuned for the official launch of this exciting service expansion.',
-          price: 'TBD', 
-          duration: 'TBD' 
+          title: 'OIL CHANGE & MAINTENANCE', 
+          description: 'Keep your engine running smoothly with our comprehensive oil change and maintenance.', 
+          fullDescription: 'Our rigorous Oil Change and Maintenance service helps ensure the longevity and performance of your vehicle. Using high-quality synthetic or conventional oils based on the manufacturers recommendations, we replace your old oil and filter to protect vital engine components. In addition, we perform a complimentary multi-point inspection including checking vital fluids, tire pressure, and visual inspection of belts and hoses. Stay ahead of potential problems and maintain a smooth, reliable ride.',
+          price: 'Contact Us', 
+          duration: '1 Hour' 
         }
       ],
       gridClass: 'col-12 col-md-6 col-lg-4'
@@ -802,11 +802,8 @@ export default function ServicesPage() {
                       data-duration={item.duration}
                       style={{ 
                         padding: '8px 12px', 
-                        fontSize: '12px',
-                        ...(serviceKey === 'powder-coating' ? { opacity: '0.5', cursor: 'not-allowed', pointerEvents: 'none' } : {})
+                        fontSize: '12px'
                       }}
-                      disabled={serviceKey === 'powder-coating'}
-                      title={serviceKey === 'powder-coating' ? 'Coming Soon' : ''}
                       onClick={(e) => handleBookNowClick(e, item)}
                     >
                       <span>BOOK NOW</span>
@@ -896,7 +893,7 @@ export default function ServicesPage() {
               <p class="service-description text-light mb-3">${item.description}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="service-price text-white fw-bold fs-6">${item.price || 'Contact for Price'}</div>
-                <button class="book-now-btn btn-main fx-slide btn-sm" data-service="${item.title}" data-price="${item.price}" data-duration="${item.duration}" style="padding: 8px 12px; font-size: 12px;${serviceKey === 'powder-coating' ? ' opacity: 0.5; cursor: not-allowed; pointer-events: none;' : ''}" ${serviceKey === 'powder-coating' ? 'disabled title="Coming Soon"' : ''}>
+                <button class="book-now-btn btn-main fx-slide btn-sm" data-service="${item.title}" data-price="${item.price}" data-duration="${item.duration}" style="padding: 8px 12px; font-size: 12px;">
                   <span>BOOK NOW</span>
                 </button>
               </div>
@@ -1720,11 +1717,11 @@ export default function ServicesPage() {
                       </div>
                       <div className="col-4 col-md-2">
                         <button
-                          className={`service-toggle-btn w-100 ${currentActiveService === 'powder-coating' ? 'active' : ''}`}
-                          data-target="powder-coating"
-                          onClick={() => handleServiceToggle('powder-coating')}
+                          className={`service-toggle-btn w-100 ${currentActiveService === 'oil-change' ? 'active' : ''}`}
+                          data-target="oil-change"
+                          onClick={() => handleServiceToggle('oil-change')}
                         >
-                          POWDER COATING
+                          OIL CHANGE & MAINTENANCE
                         </button>
                       </div>
                       <div className="col-4 col-md-2">
