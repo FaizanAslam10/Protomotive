@@ -24,22 +24,22 @@ document.addEventListener('DOMContentLoaded', function() {
         'detailing': {
             count: 6,
             services: [
-                { title: 'PRECISION PACKAGE', description: 'A clay bar treatment removes embedded dirt that washing can not, leaving your vehicles paint smooth, glossy, and ready for wax. ', price: '$399.99', duration: '2-4 Hours' },
-                { title: 'GOLD PACKAGE', description: 'Comprehensive cleaning with wax protection, clay bar treatment, and deep interior cleaning for enhanced protection.', price: 'From $149.99', duration: '2-4 Hours' },
-                { title: 'BRONZE PACKAGE', description: 'Our most comprehensive package with paint correction, sealant application, and engine bay cleaning for showroom quality.', price: 'From $109.99', duration: '1.5-3 Hours' },
-                { title: 'ODOR REMOVAL', description: 'Complete interior and exterior restoration with leather conditioning, fabric protection, and premium finishing touches.', price: 'From $279.99', duration: '30 min-1 Hours' },
+                { title: 'PREMIUM PACKAGE', description: 'A clay bar treatment removes embedded dirt that washing can not, leaving your vehicles paint smooth, glossy, and ready for wax. ', price: 'Contact Us', duration: '2-4 Hours' },
+                { title: 'STANDARD PACKAGE', description: 'Comprehensive cleaning with wax protection, clay bar treatment, and deep interior cleaning for enhanced protection.', price: 'Contact Us', duration: '2-4 Hours' },
+                { title: 'BASIC PACKAGE', description: 'Our most comprehensive package with paint correction, sealant application, and engine bay cleaning for showroom quality.', price: 'Contact Us', duration: '1.5-3 Hours' },
+                { title: 'ODOR REMOVAL', description: 'Complete interior and exterior restoration with leather conditioning, fabric protection, and premium finishing touches.', price: 'Contact Us', duration: '30 min-1 Hours' },
                 { title: 'WASH ME', description: 'Complete interior and exterior restoration with leather conditioning, fabric protection, and premium finishing touches.', price: '$30-$50', duration: '30 Minutes' },
-                { title: 'LEATHER TREATMENT', description: 'Complete interior and exterior restoration with leather conditioning, fabric protection, and premium finishing touches.', price: '$60', duration: '1.5 Hours' }
+                { title: 'LEATHER TREATMENT', description: 'Complete interior and exterior restoration with leather conditioning, fabric protection, and premium finishing touches.', price: 'Contact Us', duration: '1.5 Hours' }
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
         'vehicle-wrap': {
             count: 4,
             services: [
-                { title: 'FULL VEHICLE WRAPS', description: 'Complete vehicle transformation with premium vinyl wraps for maximum protection and stunning visual appeal.', price: 'From $2,799', duration: '3 Hours' },
+                { title: 'FULL VEHICLE WRAPS', description: 'Complete vehicle transformation with premium vinyl wraps for maximum protection and stunning visual appeal.', price: 'Contact Us', duration: '3 Hours' },
                 { title: 'HOOD & ROOF WRAPS', description: 'Accent wrapping for hoods and roofs to create distinctive styling while protecting vulnerable areas.', price: 'Contact For Prices', duration: '3 Hours' },
-                { title: 'PARTIAL WRAPS', description: 'Custom partial wrapping solutions for specific vehicle sections to achieve unique design elements.', price: 'From $149.99', duration: '3 Hours' },
-                { title: 'WINDOW MOULDINGS (CHROME DELETES)', description: 'Chrome delete services to modernize your vehicle appearance with sleek black accents.', price: 'From $349.99', duration: '3 Hours' }
+                { title: 'PARTIAL WRAPS', description: 'Custom partial wrapping solutions for specific vehicle sections to achieve unique design elements.', price: 'Contact Us', duration: '3 Hours' },
+                { title: 'WINDOW MOULDINGS (CHROME DELETES)', description: 'Chrome delete services to modernize your vehicle appearance with sleek black accents.', price: 'Contact Us', duration: '3 Hours' }
                
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
@@ -47,21 +47,21 @@ document.addEventListener('DOMContentLoaded', function() {
         'ceramic-coating': {
             count: 6,
             services: [
-                { title: 'CERAMIC PRO GOLD PACKAGE', description: 'Premium ceramic coating with enhanced durability, superior chemical resistance, and 5-year warranty protection.', price: 'From $1,499', duration: '2 Hours' },
-                { title: 'CERAMIC PRO SILVER PACKAGE', description: 'Entry-level ceramic protection with essential coverage, UV protection, and hydrophobic properties with 2-year warranty.', price: 'From $899', duration: '2 Hours' },
-                { title: 'CERAMIC PRO BRONZE PACKAGE', description: 'Basic ceramic coating protection with essential gloss enhancement and fundamental paint protection features.', price: 'From $599', duration: '2 Hours' },
-                { title: 'CERAMIC PRO SPORT PACKAGE', description: 'High-performance ceramic coating designed for sports vehicles with enhanced durability and track-ready protection.', price: 'From $349', duration: '2 Hours' },
-                { title: 'CERAMIC PRO INTERIOR PROTECTION', description: 'Specialized ceramic coating for vehicle interiors including leather, fabric, and plastic surfaces protection.', price: 'From $599', duration: '2 hours' },
-                { title: 'PAINT FILM AND VINYL PROTECTION', description: 'Marine-grade ceramic protection designed for boats and watercraft with saltwater resistance.', price: 'From $699', duration: '2 Hours' }
+                { title: 'CERAMIC PRO STANDARD PACKAGE', description: 'Premium ceramic coating with enhanced durability, superior chemical resistance, and 5-year warranty protection.', price: 'Contact Us', duration: '2 Hours' },
+                { title: 'STANDARD CERAMIC PACKAGE', description: 'Entry-level ceramic protection with essential coverage, UV protection, and hydrophobic properties with 2-year warranty.', price: 'Contact Us', duration: '2 Hours' },
+                { title: 'CERAMIC PRO BASIC PACKAGE', description: 'Basic ceramic coating protection with essential gloss enhancement and fundamental paint protection features.', price: 'Contact Us', duration: '2 Hours' },
+                { title: 'ENTRY CERAMIC PACKAGE', description: 'High-performance ceramic coating designed for sports vehicles with enhanced durability and track-ready protection.', price: 'Contact Us', duration: '2 Hours' },
+                { title: 'CERAMIC PRO INTERIOR PROTECTION', description: 'Specialized ceramic coating for vehicle interiors including leather, fabric, and plastic surfaces protection.', price: 'Contact Us', duration: '2 hours' },
+                { title: 'PAINT FILM AND VINYL PROTECTION', description: 'Marine-grade ceramic protection designed for boats and watercraft with saltwater resistance.', price: 'Contact Us', duration: '2 Hours' }
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
         'paint-protection-film': {
             count: 3,
             services: [
-                { title: 'FULL VEHICLE PROTECTION KIT', description: 'Complete vehicle protection with premium paint protection film covering the entire vehicle surface for maximum protection.', price: 'From $1,299', duration: '2 Hours' },
-                { title: 'PARTIAL FRONT PROTECTION KIT', description: 'Strategic protection for high-impact areas including front bumper, hood, fenders, and side mirrors for essential coverage.', price: 'From $1,899', duration: '3 Hours' },
-                { title: 'FULL FRONT PROTECTION KIT', description: 'Comprehensive front-end protection including bumper, hood, headlights, and mirror coverage for maximum impact protection.', price: 'From $4,799', duration: '3 Hours' }
+                { title: 'FULL VEHICLE PROTECTION KIT', description: 'Complete vehicle protection with premium paint protection film covering the entire vehicle surface for maximum protection.', price: 'Contact Us', duration: '2 Hours' },
+                { title: 'PARTIAL FRONT PROTECTION KIT', description: 'Strategic protection for high-impact areas including front bumper, hood, fenders, and side mirrors for essential coverage.', price: 'Contact Us', duration: '3 Hours' },
+                { title: 'FULL FRONT PROTECTION KIT', description: 'Comprehensive front-end protection including bumper, hood, headlights, and mirror coverage for maximum impact protection.', price: 'Contact Us', duration: '3 Hours' }
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
         },
@@ -75,10 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
         'window-tinting': {
             count: 5,
             services: [
-                { title: 'FRONT 2 WINDOWS', description: 'Driver and Passenger side windows', price: '$119.99', duration: '1-2 hours' },
-                { title: 'FULL VEHICLE', description: 'Windshield not included', price: '$219.99', duration: '2-3 hours' },
-                { title: 'WINDSHEILD', description: 'Windsheild tinting', price: '$149.99', duration: '1-2 hours' },
-                { title: 'WINDSHEILD BROW TINT', description: 'Windshield not included', price: '$79.99', duration: '30-60 mins' },
+                { title: 'FRONT 2 WINDOWS', description: 'Driver and Passenger side windows', price: 'Contact Us', duration: '1-2 hours' },
+                { title: 'FULL VEHICLE', description: 'Windshield not included', price: 'Contact Us', duration: '2-3 hours' },
+                { title: 'WINDSHEILD', description: 'Windsheild tinting', price: 'Contact Us', duration: '1-2 hours' },
+                { title: 'WINDSHEILD BROW TINT', description: 'Windshield not included', price: 'Contact Us', duration: '30-60 mins' },
                 { title: 'AIRCRAFTS', description: 'Please call for price inquiry', price: 'Contact Us', duration: 'N/A' }
             ],
             gridClass: 'col-12 col-sm-6 col-md-4'
@@ -221,13 +221,13 @@ document.addEventListener('DOMContentLoaded', function() {
             } else if (serviceKey === 'detailing') {
                 // Use specific images for detailing packages
                 switch(item.title) {
-                    case 'PRECISION PACKAGE':
+                    case 'PREMIUM PACKAGE':
                         imageSrc = 'images/precisionblack.png';
                         break;
-                    case 'GOLD PACKAGE':
+                    case 'STANDARD PACKAGE':
                         imageSrc = 'images/precisiongold.png';
                         break;
-                    case 'BRONZE PACKAGE':
+                    case 'BASIC PACKAGE':
                         imageSrc = 'images/precisionbronze.png';
                         break;
                     case 'ODOR REMOVAL':
@@ -432,7 +432,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Update modal title and service info
             document.getElementById('modalServiceTitle').textContent = `Book ${serviceTitle}`;
             document.getElementById('serviceTitle').textContent = serviceTitle;
-            document.getElementById('serviceDescription').textContent = serviceDescription || 'Professional auto service at Precision Auto Center.';
+            document.getElementById('serviceDescription').textContent = serviceDescription || 'Professional auto service at Protomotive.';
             document.getElementById('serviceDuration').textContent = serviceDuration;
             document.getElementById('servicePrice').textContent = servicePrice;
 

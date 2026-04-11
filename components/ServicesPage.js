@@ -83,45 +83,45 @@ export default function ServicesPage() {
       count: 6,
       services: [
         { 
-          title: 'PRECISION PACKAGE', 
+          title: 'PREMIUM PACKAGE', 
           description: 'Over time, dirt and contaminants build up on your vehicles paintwork, glass, and chrome surfaces.', 
           fullDescription: 'Over time, dirt and contaminants build up on your vehicles paintwork, glass, and chrome surfaces. This dirt can NOT be removed by washing alone, and it prevents wax from effectively bonding on your paintwork, significantly reducing the shine of your vehicle. The solution is a Clay bar massage that smoothens your paint by removing the built-up dirt, leaving your paintwork smooth and glossy and ready for wax.',
-          price: 'From $399.99', 
+          price: 'Contact Us', 
           duration: '2-4 Hours' 
         },
         { 
-          title: 'GOLD PACKAGE', 
+          title: 'STANDARD PACKAGE', 
           description: 'Over time, dirt and contaminants build up on your vehicles paintwork, glass, and chrome surfaces.', 
-          fullDescription: 'The GOLD PACKAGE delivers comprehensive interior and exterior detailing services for complete vehicle care. This mid-tier package includes a thorough exterior wash with full foam treatment, detailed rim cleaning, and professional tire dressing to enhance your vehicles appearance. Inside, we provide deep steam cleaning of carpets, seats, and vents, comprehensive vacuuming, and protective matte cleaner application on all interior surfaces. The service includes salt removal treatment, mat cleaning, door jamb detailing, and crystal-clear glass cleaning throughout. Perfect for regular maintenance, this package ensures your vehicle looks and feels refreshed while maintaining its value and extending the life of interior and exterior surfaces.',
-          price: 'From $149.99', 
+          fullDescription: 'The STANDARD PACKAGE delivers comprehensive interior and exterior detailing services for complete vehicle care. This mid-tier package includes a thorough exterior wash with full foam treatment, detailed rim cleaning, and professional tire dressing to enhance your vehicles appearance. Inside, we provide deep steam cleaning of carpets, seats, and vents, comprehensive vacuuming, and protective matte cleaner application on all interior surfaces. The service includes salt removal treatment, mat cleaning, door jamb detailing, and crystal-clear glass cleaning throughout. Perfect for regular maintenance, this package ensures your vehicle looks and feels refreshed while maintaining its value and extending the life of interior and exterior surfaces.',
+          price: 'Contact Us', 
           duration: '2-4 Hours' 
         },
         { 
-          title: 'BRONZE PACKAGE', 
+          title: 'BASIC PACKAGE', 
           description: 'Over time, dirt and contaminants build up on your vehicles paintwork, glass, and chrome surfaces.', 
-          fullDescription: 'The BRONZE PACKAGE is perfect for regular maintenance and basic protection of your vehicle. This service includes thorough exterior washing, basic paint decontamination, application of protective sealant, and interior cleaning with vacuuming and surface wiping. Wheels are cleaned and dressed, tires are treated with protection, and all glass surfaces are streak-free cleaned. While more basic than our premium packages, the Bronze Package still delivers professional results with quality products and attention to detail. Ideal for newer vehicles or those maintained regularly.',
-          price: 'From $109.99', 
+          fullDescription: 'The BASIC PACKAGE is perfect for regular maintenance and basic protection of your vehicle. This service includes thorough exterior washing, basic paint decontamination, application of protective sealant, and interior cleaning with vacuuming and surface wiping. Wheels are cleaned and dressed, tires are treated with protection, and all glass surfaces are streak-free cleaned. While more basic than our premium packages, the Bronze Package still delivers professional results with quality products and attention to detail. Ideal for newer vehicles or those maintained regularly.',
+          price: 'Contact Us', 
           duration: '1.5-3 Hours' 
         },
         { 
           title: 'ODOR REMOVAL', 
           description: 'Deodorization and decontamination package eliminates all odors from your vehicle.', 
           fullDescription: 'The ODOR REMOVAL service combines our complete Gold Package detailing with specialized odor elimination treatment for vehicles affected by smoke, pet odors, spills, or other persistent smells. This comprehensive service includes everything from our Gold Package - full exterior foam wash, rim detailing, tire dressing, interior steam cleaning of carpets and seats, vacuuming, matte cleaner protection, glass cleaning, and door jamb cleaning. Additionally, we provide a dedicated 2-hour odor eliminator treatment using professional-grade deodorization techniques and equipment to neutralize odors at their source. Our specialized process targets embedded odors in upholstery, carpeting, and air circulation systems, leaving your vehicle completely refreshed and odor-free. Perfect for used vehicles, rental returns, or any vehicle requiring both thorough cleaning and odor elimination.',
-          price: 'From $279.99', 
+          price: 'Contact Us', 
           duration: '30 min-1 Hours' 
         },
         { 
           title: 'WASH ME', 
           description: 'Complete car wash.', 
           fullDescription: 'The WASH ME service is our quick and convenient solution for busy vehicle owners who need a reliable, professional car wash. Using the proven two-bucket wash method, we ensure your vehicle receives a thorough and safe cleaning that minimizes the risk of scratches and swirl marks. This technique involves separate buckets for soapy water and clean rinse water, allowing us to keep dirt and debris away from your vehicles paint surface. Our trained technicians hand-wash your entire vehicle using premium car soap and microfiber mitts, paying attention to all exterior surfaces including the body, wheels, and glass. The service includes a complete rinse and spot-free drying to leave your vehicle looking clean and refreshed. Perfect for regular maintenance between full detailing services, or when you simply need a quality wash at an affordable price. Quick 30-minute service gets you back on the road with a sparkling clean vehicle.',
-          price: 'From $30', 
+          price: 'Contact Us', 
           duration: '30 Minutes' 
         },
         { 
           title: 'LEATHER TREATMENT', 
           description: 'leather conditioning', 
           fullDescription: 'The LEATHER TREATMENT service is a specialized conditioning and protection program designed to restore, nourish, and extend the life of your vehicles leather surfaces. Our comprehensive treatment begins with thorough cleaning of all leather seats, door panels, dashboard, and trim using pH-balanced leather cleaners that safely remove dirt, oils, and buildup without damaging the natural grain. Following cleaning, we apply premium leather conditioners that penetrate deep into the material to restore suppleness and prevent cracking, fading, and premature aging. The enhanced durability treatment includes UV protection to shield against sun damage and a protective barrier that repels spills and stains. Our process maintains the leathers natural texture and appearance while significantly extending its lifespan. This service is essential for preserving the luxury feel and resale value of vehicles with leather interiors, and is recommended every 3-6 months depending on usage and climate conditions. Perfect for luxury vehicles, classic cars, or any vehicle where leather interior preservation is a priority.',
-          price: '$60', 
+          price: 'Contact Us', 
           duration: '1.5 Hours' 
         }
       ],
@@ -134,28 +134,28 @@ export default function ServicesPage() {
           title: 'FULL VEHICLE WRAPS',
           description: 'We wrap it all…. cars, trucks, aircrafts, boats and trailers.',
           fullDescription: 'FULL VEHICLE WRAPS provide complete transformation and protection for your entire vehicle using premium vinyl films. Our expert technicians meticulously cover every panel, curve, and contour to deliver a flawless finish that looks like factory paint. We work with all vehicle types including cars, trucks, SUVs, boats, aircrafts, and trailers, adapting our techniques to each unique surface and design. Choose from an extensive range of finishes including gloss, satin, matte, chrome, metallic, carbon fiber, color-shift, and custom printed graphics. Our installation process includes thorough surface preparation, precise cutting and fitting, and professional heat application to ensure perfect adhesion and longevity. Full vehicle wraps offer complete paint protection while allowing for dramatic style changes, advertising opportunities, or personal expression. The high-quality films we use provide UV protection, scratch resistance, and can be removed without damaging the original paint. Perfect for businesses seeking mobile advertising, individuals wanting unique styling, or anyone looking to protect and transform their vehicles appearance.',
-          price: 'From $2,799', 
+          price: 'Contact Us', 
           duration: '3 Hours' 
         },
         { 
           title: 'HOOD & ROOF WRAPS',
           description: 'Every roof or hood wrap in Gloss black is installed with the goal of perfection and a seamless finish.',
           fullDescription: 'HOOD & ROOF WRAPS offer an affordable way to dramatically enhance your vehicles appearance while providing protection to high-impact areas. These targeted wraps focus on the most visible surfaces of your vehicle, creating striking contrast and style without the cost of full vehicle coverage. Our precision installation ensures seamless, glass-like finishes that eliminate bubbles, dust, or imperfections. Available in premium gloss black, matte black, carbon fiber, and various color options to complement your vehicles existing paint. The hood and roof areas receive the most exposure to sun, weather, and road debris, making wrap protection particularly valuable for preserving paint condition and resale value. Our expert technicians use professional-grade vinyl films and heat application techniques to achieve perfect conformity around curves, edges, and body lines. The installation process includes thorough surface preparation, precise measurement and cutting, and quality control inspection to ensure flawless results. Perfect for adding sporty aesthetics, protecting high-wear areas, or creating custom two-tone looks at a fraction of full wrap cost.',
-          price: 'Contact For Price', 
+          price: 'Contact Us', 
           duration: '3 Hours' 
         },
         {
           title: 'PARTIAL WRAPS',
           description: 'PARTIAL WRAPS provide flexible customization options for specific vehicle sections.',
           fullDescription: 'PARTIAL WRAPS provide flexible customization options for specific vehicle sections, allowing you to create unique design elements without full vehicle coverage. This service is perfect for accent pieces, racing stripes, logos, or decorative elements. Our technicians work with you to design custom layouts that complement your vehicles existing lines and features. The process includes design consultation, precision cutting of premium materials, and professional installation with attention to seamless integration. Ideal for businesses wanting branded elements, racing enthusiasts seeking performance aesthetics, or anyone wanting to personalize specific areas of their vehicle cost-effectively.',
-          price: 'From $149.99',
+          price: 'Contact Us',
           duration: '3 Hours'
         },
         { 
           title: 'WINDOW MOULDINGS (CHROME DELETES)',
           description: 'Transform your vehicles chrome trim with professional vinyl wrapping for a sleek, modern appearance.',
           fullDescription: 'WINDOW MOULDINGS (CHROME DELETES) service transforms your vehicles chrome window trim into sleek, modern accents using high-quality vinyl films. This popular modification eliminates the bright, reflective chrome elements around windows, door frames, and trim pieces, replacing them with sophisticated matte black, gloss black, or custom colored finishes. Our precision wrapping technique ensures complete coverage of all chrome surfaces while maintaining clean lines and professional appearance. The process includes thorough cleaning and preparation of chrome surfaces, careful measurement and cutting of premium vinyl materials, and expert application using heat and pressure for perfect adhesion. Chrome delete services create a more aggressive, contemporary look that complements modern vehicle styling trends. The vinyl protection also prevents chrome oxidation and corrosion while being completely reversible if desired. Popular with luxury vehicle owners, performance enthusiasts, and anyone seeking to modernize their vehicles appearance. Available in various finishes including matte black, gloss black, carbon fiber texture, and custom colors to match your vehicles aesthetic preferences.',
-          price: 'From $349.99', 
+          price: 'Contact Us', 
           duration: '3 Hours' 
         }
       ],
@@ -165,45 +165,45 @@ export default function ServicesPage() {
       count: 6,
       services: [
         { 
-          title: 'CERAMIC PRO GOLD PACKAGE', 
-          description: 'The Gold Package offered by Precision Auto Centre is the best package your vehicle can receive.', 
-          fullDescription: 'Backed by a lifetime warranty, you will never have to worry about whether or not your vehicle is protected from harsh chemicals or road grime. The Gold package is a two-part application, like the silver package, taking generally two to three days to complete but does offer more protection for your vehicle than the silver package, 4x thicker to be exact. This is accomplished by layering 4 coats Ceramic Pro 9H onto your vehicles clear coat. By adding layers of Ceramic Pro 9H, you prolong the lifespan of the coating, ensuring that your vehicles paint is always protected when its out in the world. Your vehicle will receive four layers of Ceramic Pro 9H on all its painted surfaces and trim work. This will protect it against bird droppings, acidic chemicals found in insects, and water spotting on to your vehicle. Combined with a layer of Ceramic Pro Light, your vehicle will have a super slick and hydrophobic finished surface making anything stick to it virtually impossible. Also included in the Gold package is a layer of Ceramic Pro Rain on all of your vehicles glass surfaces (windshield, windows, mirrors, sunroof, etc.) and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. This will make cleaning brake dust off the wheels a breeze.\n\n Additionally at Precision Auto Centre we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.\n\nNOTE: PAINT CORRECTION NOT INCLUDED IN PRICE',
-          price: 'From $1,499', 
+          title: 'CERAMIC PRO STANDARD PACKAGE', 
+          description: 'The Gold Package offered by Protomotive is the best package your vehicle can receive.', 
+          fullDescription: 'Backed by a lifetime warranty, you will never have to worry about whether or not your vehicle is protected from harsh chemicals or road grime. The Gold package is a two-part application, like the silver package, taking generally two to three days to complete but does offer more protection for your vehicle than the silver package, 4x thicker to be exact. This is accomplished by layering 4 coats Ceramic Pro 9H onto your vehicles clear coat. By adding layers of Ceramic Pro 9H, you prolong the lifespan of the coating, ensuring that your vehicles paint is always protected when its out in the world. Your vehicle will receive four layers of Ceramic Pro 9H on all its painted surfaces and trim work. This will protect it against bird droppings, acidic chemicals found in insects, and water spotting on to your vehicle. Combined with a layer of Ceramic Pro Light, your vehicle will have a super slick and hydrophobic finished surface making anything stick to it virtually impossible. Also included in the Gold package is a layer of Ceramic Pro Rain on all of your vehicles glass surfaces (windshield, windows, mirrors, sunroof, etc.) and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. This will make cleaning brake dust off the wheels a breeze.\n\n Additionally at Protomotive we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.\n\nNOTE: PAINT CORRECTION NOT INCLUDED IN PRICE',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         },
         { 
-          title: 'CERAMIC PRO SILVER PACKAGE', 
-          description: 'The Silver Package offered by Precision Auto Centre is a coating backed by a five-year warranty.', 
-          fullDescription: 'The Silver Package offered by Precision Auto Centre is a coating backed by a five-year warranty that gives you peace of mind that your vehicle is receiving great protection from the harsh chemical and environmental substances that it will come in to contact with your vehicle during its time out in the world. The silver package is a two-part application that generally takes two to three days to complete (depending on paint correction) and coats your vehicles exterior entirely. The silver package combines Ceramic Pro 9H and Ceramic Pro Light to give your vehicle the two-part total package when it comes to protecting it. The Ceramic Pro 9H provides the chemical resistant property to protect your vehicles existing clear coat with a ceramic coating that is 3x stronger than its original factory clear coat. This will protect it from light scratching, bird droppings, acid rain and water spotting from etching in to your vehicles clear coat, always keeping your car looking new and glossy. Topped with Ceramic Pro Light twelve hours after Ceramic Pro 9H cures will accent the base coat and leave your vehicle with a slick and hydrophobic surface. The top coat makes it very difficult for substances to stick to your vehicles surfaces such as dirt, insects, tree sap, road tar, road paint, etc. Included in the silver package as well is Ceramic Pro Rain on all your vehicles glass surfaces (Windshield, windows, mirrors, sunroof, etc.) and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. This will make cleaning brake dust off the wheels a breeze.\n\n Additionally at Precision Auto Centre we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.',
-          price: 'From $899', 
+          title: 'STANDARD CERAMIC PACKAGE', 
+          description: 'The Silver Package offered by Protomotive is a coating backed by a five-year warranty.', 
+          fullDescription: 'The Silver Package offered by Protomotive is a coating backed by a five-year warranty that gives you peace of mind that your vehicle is receiving great protection from the harsh chemical and environmental substances that it will come in to contact with your vehicle during its time out in the world. The silver package is a two-part application that generally takes two to three days to complete (depending on paint correction) and coats your vehicles exterior entirely. The silver package combines Ceramic Pro 9H and Ceramic Pro Light to give your vehicle the two-part total package when it comes to protecting it. The Ceramic Pro 9H provides the chemical resistant property to protect your vehicles existing clear coat with a ceramic coating that is 3x stronger than its original factory clear coat. This will protect it from light scratching, bird droppings, acid rain and water spotting from etching in to your vehicles clear coat, always keeping your car looking new and glossy. Topped with Ceramic Pro Light twelve hours after Ceramic Pro 9H cures will accent the base coat and leave your vehicle with a slick and hydrophobic surface. The top coat makes it very difficult for substances to stick to your vehicles surfaces such as dirt, insects, tree sap, road tar, road paint, etc. Included in the silver package as well is Ceramic Pro Rain on all your vehicles glass surfaces (Windshield, windows, mirrors, sunroof, etc.) and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. This will make cleaning brake dust off the wheels a breeze.\n\n Additionally at Protomotive we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         },
         { 
-          title: 'CERAMIC PRO BRONZE PACKAGE', 
-          description: 'The Bronze package offered by Precision Auto Centre is a coating backed by a two-year warranty.', 
-          fullDescription: 'The Bronze package offered by Precision Auto Centre is a coating backed by a two-year warranty for all of the painted surfaces of your vehicle. This package will keep your vehicle looking like new and help to protect your vehicles clear coat from environmental damage. The bronze package coats all your vehicles painted surfaces, headlights, taillights and plastic trim with Ceramic Pro Light which is the top coat used in Ceramic Pro gold and silver packages to provide a slick or (hydrophobic in technical terms) surface to your vehicle. The Bronze package also includes all your glass surfaces to be coated (windshield, mirrors, windows, sunroof, etc.) in our Ceramic Pro Rain product to provide a layer of resistance against water, dirt and ice to build up and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. While this package is a great introduction to Ceramic Pro products it does not include the Ceramic Pro 9H coating that offers the most protection for your vehicle against the harsh substances that it may come in to contact with on the road. With every package your vehicle is treated to a meticulous hand wash, decontamination and clay bar treatment to ensure that it is the cleanest possible surface to apply the Ceramic Pro bronze package to.\n\n Additionally at Precision Auto Centre we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.',
-          price: 'From $599', 
+          title: 'CERAMIC PRO BASIC PACKAGE', 
+          description: 'The Bronze package offered by Protomotive is a coating backed by a two-year warranty.', 
+          fullDescription: 'The Bronze package offered by Protomotive is a coating backed by a two-year warranty for all of the painted surfaces of your vehicle. This package will keep your vehicle looking like new and help to protect your vehicles clear coat from environmental damage. The bronze package coats all your vehicles painted surfaces, headlights, taillights and plastic trim with Ceramic Pro Light which is the top coat used in Ceramic Pro gold and silver packages to provide a slick or (hydrophobic in technical terms) surface to your vehicle. The Bronze package also includes all your glass surfaces to be coated (windshield, mirrors, windows, sunroof, etc.) in our Ceramic Pro Rain product to provide a layer of resistance against water, dirt and ice to build up and a layer of Ceramic Pro Wheel and Caliper on the face of the wheels. While this package is a great introduction to Ceramic Pro products it does not include the Ceramic Pro 9H coating that offers the most protection for your vehicle against the harsh substances that it may come in to contact with on the road. With every package your vehicle is treated to a meticulous hand wash, decontamination and clay bar treatment to ensure that it is the cleanest possible surface to apply the Ceramic Pro bronze package to.\n\n Additionally at Protomotive we offer a service to remove the wheels from your vehicle and have the inside of the wheels cleaned and coated as well as the brake calipers to offer the most protection from brake dust building up and caking on to your wheels and to make cleaning them a breeze once they’re coated.',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         },
         { 
-          title: 'CERAMIC PRO SPORT PACKAGE', 
+          title: 'ENTRY CERAMIC PACKAGE', 
           description: 'Ceramic Pro Sport is a product designed to replace the need for waxing your vehicle for six to eight months.', 
-          fullDescription: 'Ceramic Pro Sport is a product designed to replace the need for waxing your vehicle for six to eight months. Precision Auto Centre offers this entry level Ceramic Pro package to give you a taste of what ceramic coatings can do for your vehicle. Ceramic Pro Sport is a sprayable coating that has 9% SiO2 “ceramic coating” is applied to the vehicle when wet after just being washed and bonds to the surfaces providing a layer of protection that is more durable and longer lasting than that of waxes and sealants. Unlike wax Ceramic Pro Sport is also a chemical resistant coating providing that extra protection for your vehicle to stand up for acidic properties and chemicals such as salt on the roads during the winter months.',
-          price: 'From $349', 
+          fullDescription: 'Ceramic Pro Sport is a product designed to replace the need for waxing your vehicle for six to eight months. Protomotive offers this entry level Ceramic Pro package to give you a taste of what ceramic coatings can do for your vehicle. Ceramic Pro Sport is a sprayable coating that has 9% SiO2 “ceramic coating” is applied to the vehicle when wet after just being washed and bonds to the surfaces providing a layer of protection that is more durable and longer lasting than that of waxes and sealants. Unlike wax Ceramic Pro Sport is also a chemical resistant coating providing that extra protection for your vehicle to stand up for acidic properties and chemicals such as salt on the roads during the winter months.',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         },
         { 
           title: 'CERAMIC PRO INTERIOR PROTECTION', 
-          description: 'Precision Auto Centre offers interior protection packages to keep your vehicles interior protected and easily cleaned and maintained.', 
-          fullDescription: 'Precision Auto Centre offers interior protection packages to keep your vehicles interior protected and easily cleaned and maintained. Ceramic Pro Leather coating is applied to the leather surfaces of your vehicle creating a layer of protection between any food, drinks or dyes from jeans and your vehicles leather. By coating these surfaces, you can have the peace of mind knowing your vehicles white leather seats will be safe and protected from whatever is trying to stain them. One common question is, “Will it stop blue jean denim transfer?” the blue jean staining on light colored leathers is a big problem, answer is no. But it takes much longer for the staining to become noticeable. Best part is, just grab a damp cloth with water and it will wipe off. Makes cleaning lighter colored leather much easier.\n\n Ceramic Pro Textile is a coating designed for all the fabric materials in your vehicle’s interior. It is designed to bond to all types of fabric (cloth seats, micro suede, alcantara, etc.) to ensure that they are protected and easier to keep clean. Ceramic Pro Textile is a great way to keep your carpets, alcantara, floor mats, cloth seats and headliners clean and protected',
-          price: 'From $599', 
+          description: 'Protomotive offers interior protection packages to keep your vehicles interior protected and easily cleaned and maintained.', 
+          fullDescription: 'Protomotive offers interior protection packages to keep your vehicles interior protected and easily cleaned and maintained. Ceramic Pro Leather coating is applied to the leather surfaces of your vehicle creating a layer of protection between any food, drinks or dyes from jeans and your vehicles leather. By coating these surfaces, you can have the peace of mind knowing your vehicles white leather seats will be safe and protected from whatever is trying to stain them. One common question is, “Will it stop blue jean denim transfer?” the blue jean staining on light colored leathers is a big problem, answer is no. But it takes much longer for the staining to become noticeable. Best part is, just grab a damp cloth with water and it will wipe off. Makes cleaning lighter colored leather much easier.\n\n Ceramic Pro Textile is a coating designed for all the fabric materials in your vehicle’s interior. It is designed to bond to all types of fabric (cloth seats, micro suede, alcantara, etc.) to ensure that they are protected and easier to keep clean. Ceramic Pro Textile is a great way to keep your carpets, alcantara, floor mats, cloth seats and headliners clean and protected',
+          price: 'Contact Us', 
           duration: '2 hours' 
         },
         { 
           title: 'PAINT FILM AND VINYL PROTECTION', 
-          description: 'Precision Auto Centre offers an award-winning coating specifically designed to help protect your vehicles wrapped panels.', 
-          fullDescription: 'Precision Auto Centre offers an award-winning coating specifically designed to help protect your vehicles wrapped panels. Whether your vehicle has a few panels protected with clear PPF (paint protection film) or it has a complete PPF wrap or vinyl colour change Ceramic Pro PPF and Vinyl is just the product to protect paint protection film and vinyl wraps. Receiving the honour of Best New Product at the SEMA 2017 show in Las Vegas. Ceramic Pro PPF and Vinyl will keep your vehicles newly acquired PPF and Vinyl accents looking fresh and clean preventing them from fading and staining over time. Ceramic Pro PPF and Vinyl is accompanied by a factory approved warranty designed to match the warranties provided by the PPF and Vinyl companies. Ceramic Pro PPF and Vinyl is a two-part coating process that takes generally two days to complete. The base coat is applied to the wrapped surfaces and left to cure, twelve hours later the top coat is applied to give your vehicles PPF and Vinyl the best all-around protection by protecting it with a chemical resistant layer and a slick, hydrophobic layer to prevent objects from sticking to your vehicle.',
-          price: 'From $699', 
+          description: 'Protomotive offers an award-winning coating specifically designed to help protect your vehicles wrapped panels.', 
+          fullDescription: 'Protomotive offers an award-winning coating specifically designed to help protect your vehicles wrapped panels. Whether your vehicle has a few panels protected with clear PPF (paint protection film) or it has a complete PPF wrap or vinyl colour change Ceramic Pro PPF and Vinyl is just the product to protect paint protection film and vinyl wraps. Receiving the honour of Best New Product at the SEMA 2017 show in Las Vegas. Ceramic Pro PPF and Vinyl will keep your vehicles newly acquired PPF and Vinyl accents looking fresh and clean preventing them from fading and staining over time. Ceramic Pro PPF and Vinyl is accompanied by a factory approved warranty designed to match the warranties provided by the PPF and Vinyl companies. Ceramic Pro PPF and Vinyl is a two-part coating process that takes generally two days to complete. The base coat is applied to the wrapped surfaces and left to cure, twelve hours later the top coat is applied to give your vehicles PPF and Vinyl the best all-around protection by protecting it with a chemical resistant layer and a slick, hydrophobic layer to prevent objects from sticking to your vehicle.',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         }
       ],
@@ -214,23 +214,23 @@ export default function ServicesPage() {
       services: [
         { 
           title: 'FULL VEHICLE PROTECTION KIT', 
-          description: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
-          fullDescription: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
-          price: 'From $1,299', 
+          description: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
+          fullDescription: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
+          price: 'Contact Us', 
           duration: '2 Hours' 
         },
         { 
           title: 'PARTIAL FRONT PROTECTION KIT', 
-          description: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
-          fullDescription: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
-          price: 'From $1,899', 
+          description: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
+          fullDescription: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
+          price: 'Contact Us', 
           duration: '3 Hours' 
         },
         { 
           title: 'FULL FRONT PROTECTION KIT', 
-          description: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
-          fullDescription: 'At Precision Auto Center we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
-          price: 'From $4,799', 
+          description: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film.', 
+          fullDescription: 'At Protomotive we have our clients paint protection needs auto detailing needs in mind by offering clear bra film. Clear bra, synonymous known as Paint Protection Film or PPF, is the “king” of the automotive paint protection industry and possesses the best protection technology available. These clear bra films are guaranteed to never crack, bubble or yellow overtime. The partial front kit offers durable protection that is a much thicker barrier for rock chips and flying debris. With the addition of clear bra paint protection, you’ll be protected from tree sap, rock chips, insect acids, brake dust, acid contaminants and additional debris. The partial front kit includes 24” of hood covering, fender coverage and clear bra film applied to the bumpers and mirrors.',
+          price: 'Contact Us', 
           duration: '3 Hours' 
         }
       ],
@@ -256,28 +256,28 @@ export default function ServicesPage() {
           title: 'FRONT 2 WINDOWS', 
           description: 'Driver and Passenger side windows', 
           fullDescription: 'FRONT 2 WINDOWS tinting provides professional installation on your vehicles front driver and passenger side windows using premium heat-rejecting films. This targeted service focuses on the most frequently used windows, offering immediate benefits of reduced glare, enhanced privacy, and protection from harmful UV rays. Our skilled technicians use precision cutting and professional installation techniques to ensure bubble-free, perfectly fitted tint that meets legal requirements while maximizing performance. The high-quality films provide interior surface protection from premature aging, helping preserve dashboards, seats, and trim from sun damage. Advanced heat rejection technology keeps your cabin cooler, reducing air conditioning usage and improving fuel efficiency. The lifetime warranty covers adhesive failure, peeling, delamination, fading, and cracking, ensuring long-lasting performance. Perfect for drivers seeking essential window tinting benefits at an affordable price point, or as a starting point before upgrading to full vehicle coverage.',
-          price: '$119.99', 
+          price: 'Contact Us', 
           duration: '1-2 hours' 
         },
         { 
           title: 'FULL VEHICLE', 
           description: 'Windshield not included', 
           fullDescription: 'FULL VEHICLE window tinting delivers comprehensive protection and style enhancement for all side and rear windows, excluding the windshield for legal compliance. This complete tinting solution provides maximum privacy, heat rejection, and UV protection throughout your entire passenger compartment. Our professional installation covers all four side windows plus the rear window using premium films that block harmful UV rays, reduce interior heat buildup, and prevent glare from affecting your driving experience. The service includes precise measurement, computer-aided cutting, and expert installation to ensure perfect fit and finish on every window surface. Advanced heat rejection technology significantly reduces cabin temperature, lowering air conditioning costs and improving overall comfort for all passengers. The comprehensive coverage protects all interior surfaces from sun damage, preventing fading and cracking of seats, dashboard, and trim materials. Each installation includes thorough cleaning, professional application, and quality inspection to guarantee bubble-free, long-lasting results. Backed by our lifetime warranty against adhesive failure, peeling, delamination, fading, and cracking, this service provides complete vehicle transformation and protection.',
-          price: '$219.99', 
+          price: 'Contact Us', 
           duration: '2-3 hours' 
         },
         { 
           title: 'WINDSHIELD', 
           description: 'Windshield tinting', 
           fullDescription: 'WINDSHIELD tinting provides advanced protection and comfort enhancement for your vehicles front windshield using specialized films designed for maximum visibility and legal compliance. This premium service applies nearly invisible, high-performance films that dramatically reduce heat transmission while maintaining optimal clarity for safe driving. Our windshield tinting uses advanced nano-ceramic technology that blocks infrared heat rays without interfering with GPS, cellular, or radio signals. The specialized films provide superior glare reduction, making driving more comfortable in bright sunlight conditions while protecting your eyes from harmful UV radiation. Professional installation requires precise techniques to ensure perfect adhesion and bubble-free application across the curved windshield surface. The service significantly reduces interior temperature, lessening the burden on air conditioning systems and improving fuel efficiency. Windshield tinting helps protect dashboard and interior surfaces from UV damage while reducing eye strain during long drives. Our premium films meet legal transmission requirements while providing maximum heat rejection performance. Installation includes thorough surface preparation, precision cutting, and expert application backed by our comprehensive lifetime warranty against defects and performance degradation.',
-          price: '$149.99', 
+          price: 'Contact Us', 
           duration: '1-2 hours' 
         },
         { 
           title: 'WINDSHIELD BROW TINT', 
           description: 'Windshield brow strip tinting', 
           fullDescription: 'WINDSHIELD BROW TINT involves applying a precisely measured tinted strip across the top portion of your windshield to reduce glare and enhance driving comfort. This affordable enhancement targets the most problematic area for sun glare, providing immediate relief from bright sunlight and overhead lighting conditions. Our professional installation creates a smooth transition from the tinted brow area to the clear windshield, maintaining excellent visibility while dramatically reducing eye strain. The service uses high-quality films that block harmful UV rays and reduce heat transmission through the upper windshield area where sun exposure is most direct. Installation requires careful measurement to ensure the tint strip complies with legal height requirements while maximizing glare reduction benefits. The precision-cut film provides seamless integration with your windshield appearance, creating a subtle yet effective solution for sun protection. This cost-effective upgrade significantly improves driving comfort during morning and evening commutes when sun angle creates the most challenging visibility conditions. The tinted brow strip also helps protect dashboard and interior surfaces from direct UV exposure. Perfect for drivers seeking targeted glare reduction without full windshield tinting, offering professional results at an accessible price point.',
-          price: '$79.99', 
+          price: 'Contact Us', 
           duration: '30-60 mins' 
         },
         { 
@@ -524,7 +524,7 @@ export default function ServicesPage() {
 
     // Fallback to hardcoded features for backward compatibility
     const features = {
-      'PRECISION PACKAGE': [
+      'PREMIUM PACKAGE': [
         { type: 'heading', text: 'Exterior' },
         'Full Foam & Hand Wash of Entire Vehicle',
         'Full Rim Detail',
@@ -543,7 +543,7 @@ export default function ServicesPage() {
         'Clean all glass windows',
         'Interior Matte Cleaner Protectant'
       ],
-      'GOLD PACKAGE': [
+      'STANDARD PACKAGE': [
         { type: 'heading', text: 'Exterior' },
         'Full Foam & Hand Wash of Entire Vehicle',
         'Full Rim Detail',
@@ -558,7 +558,7 @@ export default function ServicesPage() {
         'Interior Matte Cleaner Protectant',
         'Clean all glass windows'
       ],
-      'BRONZE PACKAGE': [
+      'BASIC PACKAGE': [
         { type: 'heading', text: 'Exterior' },
         'Full Foam & Hand Wash of Entire Vehicle',
         'Full Rim Detail',
@@ -642,16 +642,16 @@ export default function ServicesPage() {
     'WINDOW MOULDINGS (CHROME DELETES)': [
 
     ],
-    'CERAMIC PRO GOLD PACKAGE': [
+    'CERAMIC PRO STANDARD PACKAGE': [
 
     ],
-    'CERAMIC PRO SILVER PACKAGE': [
+    'STANDARD CERAMIC PACKAGE': [
 
     ],
-    'CERAMIC PRO BRONZE PACKAGE': [
+    'CERAMIC PRO BASIC PACKAGE': [
 
     ],
-    'CERAMIC PRO SPORT PACKAGE': [
+    'ENTRY CERAMIC PACKAGE': [
 
     ],
     'CERAMIC PRO INTERIOR PROTECTION': [
@@ -878,7 +878,7 @@ export default function ServicesPage() {
     
     if (service.title === 'COMING SOON') return;
     
-    const serviceDescription = service.description || 'Professional auto service at Precision Auto Center.';
+    const serviceDescription = service.description || 'Professional auto service at Protomotive.';
     openBookingModal(service.title, service.price, service.duration, serviceDescription);
   };
 
@@ -1207,7 +1207,7 @@ export default function ServicesPage() {
         console.log('Book now clicked:', service); // Debug log
         
         if (service.title && service.title !== 'COMING SOON') {
-          const serviceDescription = `Professional ${service.title.toLowerCase()} service at Precision Auto Center.`;
+          const serviceDescription = `Professional ${service.title.toLowerCase()} service at Protomotive.`;
           console.log('Opening booking modal for:', service.title); // Debug log
           openBookingModal(service.title, service.price, service.duration, serviceDescription);
         }
@@ -1696,7 +1696,7 @@ export default function ServicesPage() {
                               )}
                               {/* Fallback for hardcoded services without additional_pricing field */}
                               {!selectedServiceDetail?.additional_pricing && selectedServiceDetail?.serviceKey === 'detailing' &&
-                               ['PRECISION PACKAGE', 'GOLD PACKAGE', 'BRONZE PACKAGE'].includes(selectedServiceDetail?.title) && (
+                               ['PREMIUM PACKAGE', 'STANDARD PACKAGE', 'BASIC PACKAGE'].includes(selectedServiceDetail?.title) && (
                                 <span className="additional-pricing-pill text-white px-3 py-2 rounded-pill" style={{ backgroundColor: '#444', fontSize: '13px', fontWeight: '500' }}>
                                   Add $30 SUV • Add $50 VAN
                                 </span>

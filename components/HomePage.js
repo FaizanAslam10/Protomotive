@@ -609,7 +609,7 @@ export default function HomePage() {
                 <div className="hero-image-container">
                   <Image 
                     src="/images/misc/Crownlogo.png" 
-                    alt="Precision Auto Center Vehicle Display" 
+                    alt="Protomotive Vehicle Display" 
                     fill
                     sizes="100vw"
                     style={{ objectFit: 'contain' }}
@@ -685,7 +685,7 @@ export default function HomePage() {
                 id="06"
                 title="WINDOW TINTING"
                 image="/images/windowstint.png"
-                description="Precision Auto Center provides lifetime warranty against Adhesive failure, Peeling, Delamination, and more."
+                description="Protomotive provides lifetime warranty against Adhesive failure, Peeling, Delamination, and more."
                 delay="1.0s"
               />
             </div>

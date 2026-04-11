@@ -82,9 +82,9 @@ async function sendContactNotification(contactData) {
     const html = generateContactEmailHtml(contactData);
 
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Precision Auto Center <onboarding@resend.dev>',
+      from: process.env.RESEND_FROM_EMAIL || 'Protomotive <onboarding@resend.dev>',
       to: ['pacwebsite10@gmail.com'],
-      subject: `New Contact Message from ${contactData.name} | Precision Auto Center`,
+      subject: `New Contact Message from ${contactData.name} | Protomotive`,
       html: html,
       reply_to: contactData.email
     });
@@ -123,7 +123,7 @@ function generateContactEmailHtml(data) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Contact Message - Precision Auto Center</title>
+    <title>New Contact Message - Protomotive</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600&display=swap" rel="stylesheet">
@@ -302,7 +302,7 @@ function generateContactEmailHtml(data) {
     <div class="email-container">
         <!-- Header -->
         <div class="header">
-            <div class="logo">PRECISION AUTO CENTER</div>
+            <div class="logo">PROTOMOTIVE</div>
             <div class="tagline">AUTOMOTIVE EXCELLENCE</div>
         </div>
 
@@ -361,7 +361,7 @@ function generateContactEmailHtml(data) {
                 <ul>
                     <li><a href="mailto:${data.email}">Reply to ${data.name}</a></li>
                     ${data.phone ? `<li><a href="tel:${data.phone}">Call ${data.phone}</a></li>` : ''}
-                    <li><a href="mailto:${data.email}?subject=Re: Your message to Precision Auto Center&body=Hi ${data.name},%0A%0AThank you for contacting Precision Auto Center.%0A%0A">Send quick reply</a></li>
+                    <li><a href="mailto:${data.email}?subject=Re: Your message to Protomotive&body=Hi ${data.name},%0A%0AThank you for contacting Protomotive.%0A%0A">Send quick reply</a></li>
                 </ul>
             </div>
         </div>
@@ -369,7 +369,7 @@ function generateContactEmailHtml(data) {
         <!-- Footer -->
         <div class="footer">
             <p>This message was sent through the contact form on your website.</p>
-            <p><strong>Precision Auto Center</strong> | Professional Automotive Services</p>
+            <p><strong>Protomotive</strong> | Professional Automotive Services</p>
             <div class="timestamp">
                 Message received on ${currentDate} at ${currentTime} EDT
             </div>

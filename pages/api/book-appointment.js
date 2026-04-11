@@ -177,9 +177,9 @@ async function createCalBooking(bookingData) {
 
   // Map your service names to Cal.com event type IDs
   const serviceToEventTypeMap = {
-    'PRECISION PACKAGE': process.env.CAL_EVENT_TYPE_PRECISION || 1,
-    'GOLD PACKAGE': process.env.CAL_EVENT_TYPE_GOLD || 2,
-    'BRONZE PACKAGE': process.env.CAL_EVENT_TYPE_BRONZE || 3,
+    'PREMIUM PACKAGE': process.env.CAL_EVENT_TYPE_PRECISION || 1,
+    'STANDARD PACKAGE': process.env.CAL_EVENT_TYPE_GOLD || 2,
+    'BASIC PACKAGE': process.env.CAL_EVENT_TYPE_BRONZE || 3,
     'ODOR REMOVAL': process.env.CAL_EVENT_TYPE_ODOR || 4,
     'WASH ME': process.env.CAL_EVENT_TYPE_WASH || 5,
     'LEATHER TREATMENT': process.env.CAL_EVENT_TYPE_LEATHER || 6,
@@ -187,10 +187,10 @@ async function createCalBooking(bookingData) {
     'HOOD & ROOF WRAPS': process.env.CAL_EVENT_TYPE_HOOD_ROOF || 8,
     'PARTIAL WRAPS': process.env.CAL_EVENT_TYPE_PARTIAL_WRAP || 9,
     'WINDOW MOULDINGS (CHROME DELETES)': process.env.CAL_EVENT_TYPE_CHROME_DELETE || 10,
-    'CERAMIC PRO GOLD PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_GOLD || 11,
-    'CERAMIC PRO SILVER PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_SILVER || 12,
-    'CERAMIC PRO BRONZE PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_BRONZE || 13,
-    'CERAMIC PRO SPORT PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_SPORT || 14,
+    'CERAMIC PRO STANDARD PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_GOLD || 11,
+    'STANDARD CERAMIC PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_SILVER || 12,
+    'CERAMIC PRO BASIC PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_BRONZE || 13,
+    'ENTRY CERAMIC PACKAGE': process.env.CAL_EVENT_TYPE_CERAMIC_SPORT || 14,
     'CERAMIC PRO INTERIOR PROTECTION': process.env.CAL_EVENT_TYPE_CERAMIC_INTERIOR || 15,
     'PAINT FILM AND VINYL PROTECTION': process.env.CAL_EVENT_TYPE_PAINT_FILM || 16,
     'FULL VEHICLE PROTECTION KIT': process.env.CAL_EVENT_TYPE_PPF_FULL || 17,
@@ -357,9 +357,9 @@ async function sendCustomerConfirmation(emailData) {
   
   try {
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Precision Auto Center <onboarding@resend.dev>',
+      from: process.env.RESEND_FROM_EMAIL || 'Protomotive <onboarding@resend.dev>',
       to: [emailData.customerEmail],
-      subject: `Booking Confirmed - ${emailData.serviceName} | Precision Auto Center`,
+      subject: `Booking Confirmed - ${emailData.serviceName} | Protomotive`,
       html: customerHtml,
       reply_to: process.env.BUSINESS_EMAIL || 'pacwebsite10@gmail.com'
     });
@@ -384,7 +384,7 @@ async function sendOwnerNotification(emailData) {
   
   try {
     const { data, error } = await resend.emails.send({
-      from: process.env.RESEND_FROM_EMAIL || 'Precision Auto Center <onboarding@resend.dev>',
+      from: process.env.RESEND_FROM_EMAIL || 'Protomotive <onboarding@resend.dev>',
       to: [process.env.BUSINESS_EMAIL || 'pacwebsite10@gmail.com'],
       subject: `New Booking: ${emailData.serviceName} - ${emailData.appointmentDate}`,
       html: ownerHtml,
@@ -424,7 +424,7 @@ function generateGoogleCalendarLink(data) {
   const endTime = formatDate(endDate);
   
   // Create event details
-  const title = encodeURIComponent(`${data.serviceName} - Precision Auto Center`);
+  const title = encodeURIComponent(`${data.serviceName} - Protomotive`);
   const details = encodeURIComponent(`Service: ${data.serviceName}
 Customer: ${data.customerName}
 Phone: ${data.customerPhone}
@@ -432,11 +432,11 @@ Vehicle: ${data.vehicleInfo}
 ${data.specialRequests ? `Special Requests: ${data.specialRequests}` : ''}
 Booking Reference: ${data.bookingReference}
 
-Precision Auto Center
+Protomotive
 Phone: (905) 670-3484
 Address: 123 Auto Center Dr, Precision City, ON`);
   
-  const location = encodeURIComponent('Precision Auto Center, 123 Auto Center Dr, Precision City, ON');
+  const location = encodeURIComponent('Protomotive, 123 Auto Center Dr, Precision City, ON');
   
   // Generate Google Calendar URL
   return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${startTime}/${endTime}&details=${details}&location=${location}&ctz=America/New_York`;
@@ -452,7 +452,7 @@ function generateCustomerEmailHtml(data) {
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Booking Receipt - Precision Auto Center</title>
+      <title>Booking Receipt - Protomotive</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -681,7 +681,7 @@ function generateCustomerEmailHtml(data) {
       <div class="receipt-container">
           <!-- Header -->
           <div class="receipt-header">
-              <div class="logo">PRECISION AUTO CENTER</div>
+              <div class="logo">PROTOMOTIVE</div>
           </div>
           
           <div class="receipt-number">
@@ -839,10 +839,10 @@ function generateCustomerEmailHtml(data) {
           <!-- Footer -->
           <div class="footer">
               <div class="footer-divider">════════════════════</div>
-              <div>Thank you for choosing Precision Auto Center</div>
+              <div>Thank you for choosing Protomotive</div>
               <div>This is your official booking confirmation</div>
               <div class="footer-divider">════════════════════</div>
-              <div>© ${data.currentYear || new Date().getFullYear()} Precision Auto Center</div>
+              <div>© ${data.currentYear || new Date().getFullYear()} Protomotive</div>
           </div>
       </div>
   </body>
@@ -859,7 +859,7 @@ function generateOwnerEmailHtml(data) {
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>New Booking Notification - Precision Auto Center</title>
+      <title>New Booking Notification - Protomotive</title>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -1089,7 +1089,7 @@ function generateOwnerEmailHtml(data) {
       <div class="receipt-container">
           <!-- Header -->
           <div class="receipt-header">
-              <div class="logo">PRECISION AUTO CENTER</div>
+              <div class="logo">PROTOMOTIVE</div>
               <div class="tagline">NEW BOOKING NOTIFICATION</div>
           </div>
   
@@ -1237,10 +1237,10 @@ function generateOwnerEmailHtml(data) {
           <!-- Footer -->
           <div class="footer">
               <div class="footer-divider">════════════════════</div>
-              <div>Precision Auto Center - Owner Notification</div>
+              <div>Protomotive - Owner Notification</div>
               <div>Booking made through website system</div>
               <div class="footer-divider">════════════════════</div>
-              <div>© ${data.currentYear || new Date().getFullYear()} Precision Auto Center</div>
+              <div>© ${data.currentYear || new Date().getFullYear()} Protomotive</div>
           </div>
       </div>
   </body>

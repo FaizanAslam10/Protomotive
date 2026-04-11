@@ -291,7 +291,7 @@ export default function HeaderSimple() {
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
 
           <h5 style={{ color: '#ffffff', marginBottom: '15px', visibility: 'visible', opacity: 1 }}>About Us</h5>
-          <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Precision Auto Center is a unique state of the art auto care facility that provides outstanding customer service. We pride ourselves on the fact that we only trust a combination of the very best materials and the most competent professionals to carry out your chosen service.</p>
+          <p style={{ color: '#ffffff', lineHeight: '1.6', visibility: 'visible', opacity: 1 }}>Protomotive is a unique state of the art auto care facility that provides outstanding customer service. We pride ourselves on the fact that we only trust a combination of the very best materials and the most competent professionals to carry out your chosen service.</p>
 
           <div className="spacer-30-line" style={{ visibility: 'visible', opacity: 1 }}></div>
 

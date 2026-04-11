@@ -25,7 +25,7 @@ export default async function handler(req, res) {
     // Generate ICS calendar content
     let icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Precision Auto Center//Live Booking Feed//EN
+PRODID:-//Protomotive//Live Booking Feed//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:PAC Bookings (${adminId})
@@ -116,7 +116,7 @@ END:VEVENT
     // Return error as ICS with error message
     const errorICS = `BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//Precision Auto Center//Error//EN
+PRODID:-//Protomotive//Error//EN
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:PAC Bookings - Error
