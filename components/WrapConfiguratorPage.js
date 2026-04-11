@@ -197,15 +197,12 @@ export default function WrapConfiguratorPage() {
           </section>
 
           {/* Wrap Configurator Section */}
-          <section className="bg-dark wrap-configurator-iframe-section">
+          <section className="bg-dark wrap-configurator-iframe-section" style={{ minHeight: '50vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <div className="container">
               <div className="row justify-content-center">
-                <div className="col-lg-12">
-                  <iframe
-                    src="https://autostyle.web.app/precisionauto"
-                    style={{ width: '100%', height: '800px', border: 'none' }}
-                    title="Wrap Configurator"
-                  />
+                <div className="col-lg-12 text-center">
+                  <h2 className="text-white" style={{ fontSize: '3rem', fontWeight: 'bold' }}>Coming Soon</h2>
+                  <p className="text-white-50 mt-3" style={{ fontSize: '1.2rem' }}>Our wrap configurator is currently under development. Please check back later!</p>
                 </div>
               </div>
             </div>
