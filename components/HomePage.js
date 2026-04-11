@@ -758,15 +758,20 @@ export default function HomePage() {
                 <div className="subtitle wow fadeInUp" data-wow-delay=".2s">About Us</div>
                 <h2 className="wow fadeInUp" data-wow-delay=".4s">PROTOMOTIVE</h2>
                 <p className="wow fadeInUp" data-wow-delay=".6s">
-                  Precision Auto Center is a unique state of the art auto care facility that provides outstanding customer service. 
-                  We pride ourselves on the fact that we only trust a combination of the very best materials and the most competent 
-                  professionals to carry out your chosen service.
+                  Protomotive.pk is a premium automotive service and detailing studio located in Lahore, Pakistan. They specialise in high-end vehicle protection and maintenance, offering services ranging from aesthetic enhancements to routine mechanical care.
                 </p>
-                <p className="wow fadeInUp" data-wow-delay=".6s">
-                  We offer a range of personalized services from Auto Detailing, Vehicle Wraps, Ceramic Coatings, Auto Tinting, 
-                  Paint Protection Films (PPF), Oil Change Maintenance, and Paint Corrections (Polishing) and Collision body repair.
-                </p>
-                <Link href="/services" className="btn-main fx-slide wow fadeInUp" data-wow-delay=".6s" data-hover="Read More">
+                <div className="wow fadeInUp" data-wow-delay=".6s">
+                  <h4 className="mt-4 mb-3">Services Offered</h4>
+                  <p>The studio provides a variety of car care solutions, including:</p>
+                  <ul className="list-s1 style-2 mb-4">
+                    <li className="mb-2"><strong>Paint Protection Film (PPF):</strong> High-quality shielding for vehicle paint to prevent stone chips and scratches.</li>
+                    <li className="mb-2"><strong>Ceramic Coating:</strong> Advanced surface protection to maintain a showroom gloss.</li>
+                    <li className="mb-2"><strong>Auto Detailing:</strong> Deep cleaning and restoration for both interior and exterior.</li>
+                    <li className="mb-2"><strong>Vinyl Wraps:</strong> Custom aesthetic changes for vehicle exteriors.</li>
+                    <li className="mb-2"><strong>Maintenance:</strong> General services such as oil changes to keep vehicles in peak condition.</li>
+                  </ul>
+                </div>
+                <Link href="/services" className="btn-main fx-slide wow fadeInUp mt-2" data-wow-delay=".6s" data-hover="Read More">
                   <span>Read More</span>
                 </Link>
               </div>
