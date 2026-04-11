@@ -1041,8 +1041,8 @@ export default function HomePage() {
           <div className="container">
             <div className="row g-4 justify-content-between">
               <div className="col-lg-6">
-                <div className="p-40 h-100 jarallax rounded-1 overflow-hidden">
-                  <img src="/images/red-car-wheel.jpg" className="jarallax-img" alt="" />
+                <div className="p-40 h-100 rounded-1 overflow-hidden" style={{ position: 'relative' }}>
+                  <video src="/images/getintouch.mp4" autoPlay muted loop playsInline style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }}></video>
                   <div className="sw-overlay"></div>
                   <div className="gradient-edge-bottom h-80"></div>
                   <div className="relative z-2">
