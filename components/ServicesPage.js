@@ -16,31 +16,10 @@ export default function ServicesPage() {
   }, []);
 
   const fetchServicesFromAPI = async () => {
-    try {
-      setLoading(true);
-      const response = await fetch('/api/services/get-all?activeOnly=true');
-
-      if (!response.ok) {
-        throw new Error('Failed to fetch services');
-      }
-
-      const data = await response.json();
-
-      if (data.success) {
-        // Transform API data to match existing structure
-        const transformedData = transformServicesData(data.services);
-        setServiceContent(transformedData);
-      } else {
-        throw new Error(data.message || 'Failed to fetch services');
-      }
-    } catch (err) {
-      console.error('Error fetching services:', err);
-      setError(err.message);
-      // Fallback to hardcoded data if API fails
-      setServiceContent(getHardcodedServiceContent());
-    } finally {
-      setLoading(false);
-    }
+    // Database disabled; bypass API and use hardcoded data directly
+    setLoading(true);
+    setServiceContent(getHardcodedServiceContent());
+    setLoading(false);
   };
 
   // Transform API services into the format expected by the component
@@ -904,78 +883,12 @@ export default function ServicesPage() {
 
   // Fetch available time slots from database - exactly like original
   const fetchAvailableTimeSlots = async (date) => {
-    try {
-      setIsLoading(true);
-      // Format date as YYYY-MM-DD without timezone conversion
-      const year = date.getFullYear();
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const day = String(date.getDate()).padStart(2, '0');
-      const dateStr = `${year}-${month}-${day}`;
-      
-      console.log('🚀 FIXED: Fetching SERVICE-SPECIFIC availability for date:', dateStr);
-      console.log('🎯 Service duration:', selectedService?.duration);
-
-      // Use service-specific endpoint with reverse blocking
-      const response = await fetch(`/api/check-availability-for-service?date=${dateStr}&duration=${encodeURIComponent(selectedService?.duration || '2 Hours')}`);
-      
-      console.log('Response status:', response.status);
-      
-      // Get response text first to debug (even for errors)
-      const responseText = await response.text();
-      console.log('Response text:', responseText);
-      
-      // Check if response is OK
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}\nServer Response: ${responseText}`);
-      }
-      
-      // Try to parse as JSON
-      let data;
-      try {
-        data = JSON.parse(responseText);
-      } catch (parseError) {
-        console.error('JSON parse error:', parseError);
-        console.error('Response was not valid JSON:', responseText);
-        throw new Error(`Server returned invalid JSON. Response: ${responseText.substring(0, 200)}`);
-      }
-      
-      console.log('Parsed data:', data);
-      console.log('Available slots:', data.availableSlots);
-      console.log('Booked slots:', data.bookedSlots);
-      console.log('All slots:', data.allTimeSlots);
-      
-      if (!data.success) {
-        const message = data.message || 'Error loading available times';
-        console.error('API returned success=false:', message);
-        setAvailableTimeSlots([]);
-        return;
-      }
-
-      // Show only available time slots (hide booked ones completely)
-      const availableSlots = data.availableSlots || [];
-      
-      console.log('Processing available slots only:', availableSlots);
-      
-      if (availableSlots.length === 0) {
-        console.log('No times available for this date');
-        setAvailableTimeSlots([]);
-        return;
-      }
-      
-      setAvailableTimeSlots(availableSlots);
-      console.log(`Set ${availableSlots.length} available time slots`);
-      
-    } catch (error) {
-      console.error('Error loading time slots:', error);
-      // Show error message to user instead of fallback
-      setAvailableTimeSlots([]);
-      setBookingError(`Error loading available times: ${error.message}`);
-    } finally {
-      setIsLoading(false);
-    }
+    setIsLoading(true);
+    setAvailableTimeSlots([]);
+    setBookingError('Coming Soon');
+    setIsLoading(false);
   };
 
-  // Handle booking form submission
   const handleBookingSubmit = async (e) => {
     e.preventDefault();
     
@@ -1961,8 +1874,7 @@ export default function ServicesPage() {
                                     </div>
                                   ) : bookingError ? (
                                     <div style={{ gridColumn: '1/-1', textAlign: 'center', color: '#ff6b6b', padding: '20px' }}>
-                                      {bookingError}<br/>
-                                      <small>Check console for details</small>
+                                      Coming Soon
                                     </div>
                                   ) : availableTimeSlots.length === 0 ? (
                                     <div style={{ gridColumn: '1/-1', textAlign: 'center', color: '#888', padding: '20px' }}>
