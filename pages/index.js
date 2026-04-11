@@ -13,7 +13,7 @@ const HomePage = dynamic(() => import('../components/HomePage'), {
       color: 'white'
     }}>
       <div style={{ textAlign: 'center' }}>
-        <img src="/images/center-logo-shield.png" alt="Loading..." width="100" height="85" />
+        <img src="/images/loadinglogo.png" alt="Loading..." width="100" height="auto" />
         <div style={{ marginTop: '20px' }}>Loading...</div>
       </div>
     </div>
