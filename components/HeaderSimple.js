@@ -252,16 +252,16 @@ export default function HeaderSimple() {
           <span></span>
         </div>
 
-        <div id="extra-content" style={{ 
-          color: '#ffffff', 
+        <div id="extra-content" style={{
+          color: '#ffffff',
           zIndex: 1001,
           padding: '50px',
           position: 'absolute',
           top: 0,
+          bottom: 0,
           left: 0,
-          width: '100%',
-          height: '100vh',
-          overflowY: 'scroll',
+          right: '-17px',
+          overflowY: 'auto',
           visibility: 'visible !important',
           opacity: '1 !important',
           WebkitOverflowScrolling: 'touch',

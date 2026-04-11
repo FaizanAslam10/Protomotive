@@ -202,7 +202,7 @@ export default function Layout({ children, title = "Protomotive", showPreloader 
           #wrapper {
             overflow-x: hidden;
             width: 100%;
-            max-width: 100vw;
+            max-width: 100%;
           }
 
           .container {
