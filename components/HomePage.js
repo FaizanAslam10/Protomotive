@@ -432,7 +432,7 @@ export default function HomePage() {
         {
           featureType: "poi",
           elementType: "geometry",
-          stylers: [{ color: "#f14e4e" }, { visibility: "off" }]
+          stylers: [{ color: "#2698cd" }, { visibility: "off" }]
         },
         {
           featureType: "poi",
@@ -442,7 +442,7 @@ export default function HomePage() {
         {
           featureType: "poi",
           elementType: "labels.icon",
-          stylers: [{ color: "#f14e4e" }, { visibility: "off" }]
+          stylers: [{ color: "#2698cd" }, { visibility: "off" }]
         },
         {
           featureType: "poi.park",
@@ -467,7 +467,7 @@ export default function HomePage() {
         {
           featureType: "road.arterial",
           elementType: "labels.text.fill",
-          stylers: [{ color: "#f14e4e" }, { visibility: "off" }]
+          stylers: [{ color: "#2698cd" }, { visibility: "off" }]
         },
         {
           featureType: "road.highway",
@@ -528,7 +528,7 @@ export default function HomePage() {
       // Info window content
       const infoWindowContent = `
         <div style="padding: 10px; max-width: 250px; font-family: Arial, sans-serif;">
-          <h3 style="margin: 0 0 10px 0; color: #f14e4e; font-size: 16px;">PROTOMOTIVE</h3>
+          <h3 style="margin: 0 0 10px 0; color: #2698cd; font-size: 16px;">PROTOMOTIVE</h3>
           <p style="margin: 5px 0; color: #333; font-size: 14px;">
             <strong>Address:</strong><br/>
             Plot 413,<br/>
@@ -536,12 +536,12 @@ export default function HomePage() {
           </p>
           <p style="margin: 5px 0; color: #333; font-size: 14px;">
             <strong>Phone:</strong><br/>
-            <a href="tel:+923005005666" style="color: #f14e4e; text-decoration: none;">0300 5005666</a>
+            <a href="tel:+923005005666" style="color: #2698cd; text-decoration: none;">0300 5005666</a>
           </p>
           <p style="margin: 10px 0 0 0;">
             <a href="https://maps.app.goo.gl/8XptJuQif8sRPz6Z7"
                target="_blank"
-               style="display: inline-block; background: #f14e4e; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-size: 13px;">
+               style="display: inline-block; background: #2698cd; color: white; padding: 8px 16px; text-decoration: none; border-radius: 4px; font-size: 13px;">
               Get Directions
             </a>
           </p>
@@ -1166,7 +1166,7 @@ export default function HomePage() {
       gap: '10px'
     }}>
       <div style={{
-        background: '#f14e4e',
+        background: '#2698cd',
         color: 'white',
         padding: '10px 20px',
         borderRadius: '5px',
@@ -1187,7 +1187,7 @@ export default function HomePage() {
         alignItems: 'center',
         justifyContent: 'center',
         boxShadow: '0 4px 10px rgba(0,0,0,0.5)',
-        border: '3px solid #f14e4e'
+        border: '3px solid #2698cd'
       }}>
         <img 
           src="/images/footlogo.png" 
