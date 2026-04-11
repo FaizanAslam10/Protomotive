@@ -1148,16 +1148,66 @@ export default function HomePage() {
         </section>
 
         {/* Navigation Map Section */}
-<div className="cs_navigation_map wow fadeInUp">
-  <iframe
-    src="https://maps.google.com/maps?q=Plot%20413%2C%20DHA%20Phase%208%20Ex%20Park%20View%20Block%20D%2C%20Lahore&t=&z=15&ie=UTF8&iwloc=&output=embed"
-    width="100%"
-    height="400"
-    style={{ border: 0, backgroundColor: '#1a1a1a', filter: 'invert(100%) hue-rotate(180deg) contrast(100%)' }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-  />
+<div className="cs_navigation_map wow fadeInUp" style={{ position: 'relative', width: '100%', height: '400px', cursor: 'pointer' }}>
+  <a 
+    href="https://maps.app.goo.gl/8XptJuQif8sRPz6Z7" 
+    target="_blank" 
+    rel="noopener noreferrer"
+    style={{ display: 'block', width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 10 }}
+  >
+    <div style={{
+      position: 'absolute',
+      top: '50%',
+      left: '50%',
+      transform: 'translate(-50%, -50%)',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      gap: '10px'
+    }}>
+      <div style={{
+        background: '#f14e4e',
+        color: 'white',
+        padding: '10px 20px',
+        borderRadius: '5px',
+        fontWeight: 'bold',
+        fontSize: '14px',
+        boxShadow: '0 4px 6px rgba(0,0,0,0.3)',
+        textTransform: 'uppercase'
+      }}>
+        Get Directions
+      </div>
+      <div style={{
+        width: '50px',
+        height: '50px',
+        background: '#222',
+        borderRadius: '50%',
+        padding: '5px',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        boxShadow: '0 4px 10px rgba(0,0,0,0.5)',
+        border: '3px solid #f14e4e'
+      }}>
+        <img 
+          src="/images/footlogo.png" 
+          alt="Protomotive Pin" 
+          style={{ width: '100%', height: 'auto', objectFit: 'contain' }} 
+        />
+      </div>
+    </div>
+  </a>
+  <div style={{ width: '100%', height: '100%', pointerEvents: 'none' }}>
+    <iframe
+      src="https://maps.google.com/maps?q=31.5258197,74.4467111&t=&z=15&ie=UTF8&iwloc=&output=embed"
+      width="100%"
+      height="100%"
+      style={{ border: 0, backgroundColor: '#1a1a1a', filter: 'invert(100%) hue-rotate(180deg) brightness(80%) contrast(120%)' }}
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    />
+  </div>
 </div>
       </div>
     </Layout>
