@@ -360,7 +360,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </div>
 
                         <div class="loading" id="loadingIndicator">
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <img src="/images/loadinglogo.png" alt="Loading..." style="width: 50px; height: auto;" class="fa-spin" />
                             <p>Processing your booking...</p>
                         </div>
                     </div>
