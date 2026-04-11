@@ -13839,10 +13839,26 @@ img {
   }
 }
 
-/* Feature box mobile glow effect */
+/* Feature box mobile pulsing glow effect */
+@keyframes mobileGlowPulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.9);
+  }
+}
+
 @media (max-width: 768px) {
   .feature-box-glow::before {
     opacity: 1 !important;
     background: radial-gradient(circle 200px at 50% 50%, rgba(38, 152, 205, 0.4) 0%, rgba(38, 152, 205, 0.2) 40%, transparent 80%) !important;
+    animation: mobileGlowPulse 4s infinite ease-in-out;
   }
 }
