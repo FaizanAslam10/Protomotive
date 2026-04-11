@@ -744,9 +744,9 @@ export default function ServicesPage() {
                     {item.fullDescription && (
                       <span 
                         className="read-more-link" 
-                        onClick={() => openServiceDetailModal(serviceKey, index)}
+                        onClick={() => alert('Coming soon...')}
                         style={{ 
-                          color: '#ff4444', 
+                          color: '#2698cd', 
                           cursor: 'pointer', 
                           textDecoration: 'underline', 
                           fontWeight: '500', 
