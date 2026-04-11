@@ -728,43 +728,7 @@ export default function ServicesPage() {
       <div className="row g-4 mt-4">
         {service.services.slice(0, 1).map((item, index) => {
           const delay = index * 0.2;
-          let imageSrc = `images/service-${(index % 6) + 1}.jpg`;
-          
-          // Use specific images for different services - exactly like original
-          if (serviceKey === 'ceramic-coating') {
-            imageSrc = 'images/ceramicpro.png';
-          } else if (serviceKey === 'vehicle-wrap') {
-            imageSrc = 'images/3m.jpg';
-          } else if (serviceKey === 'paint-protection-film') {
-            imageSrc = 'images/ultimate.png';
-          } else if (serviceKey === 'window-tinting') {
-            imageSrc = 'images/xpel-01.jpg';
-          } else if (serviceKey === 'detailing') {
-            switch(item.title) {
-              case 'PRECISION PACKAGE':
-                imageSrc = '/images/black.png';
-                break;
-              case 'GOLD PACKAGE':
-                imageSrc = '/images/gold.png';
-                break;
-              case 'BRONZE PACKAGE':
-                imageSrc = '/images/bronze.png';
-                break;
-              case 'ODOR REMOVAL':
-                imageSrc = '/images/odor.png';
-                break;
-              case 'WASH ME':
-                imageSrc = '/images/washme.jpeg';
-                break;
-              case 'LEATHER TREATMENT':
-                imageSrc = 'images/leather.avif';
-                break;
-              default:
-                imageSrc = `images/service-${(index % 6) + 1}.jpg`;
-            }
-          }
-
-          return (
+          let imageSrc = '/images/iconlogo.png';          return (
             <div key={index} className={service.gridClass}>
               <div className="service-container" style={{ position: 'relative' }}>
                 <div className="service-badge wow fadeInUp" data-wow-delay={`${delay}s`}>
@@ -844,42 +808,7 @@ export default function ServicesPage() {
     
     service.services.slice(0, 1).forEach((item, index) => {
       const delay = index * 0.2;
-      let imageSrc = `images/service-${(index % 6) + 1}.jpg`;
-      
-      if (serviceKey === 'ceramic-coating') {
-        imageSrc = 'images/ceramicpro.png';
-      } else if (serviceKey === 'vehicle-wrap') {
-        imageSrc = 'images/3m.jpg';
-      } else if (serviceKey === 'paint-protection-film') {
-        imageSrc = 'images/ultimate.png';
-      } else if (serviceKey === 'window-tinting') {
-        imageSrc = 'images/xpel-01.jpg';
-      } else if (serviceKey === 'detailing') {
-        switch(item.title) {
-          case 'PRECISION PACKAGE':
-            imageSrc = '/images/black.png';
-            break;
-          case 'GOLD PACKAGE':
-            imageSrc = '/images/gold.png';
-            break;
-          case 'BRONZE PACKAGE':
-            imageSrc = '/images/bronze.png';
-            break;
-          case 'ODOR REMOVAL':
-            imageSrc = '/images/odor.png';
-            break;
-          case 'WASH ME':
-            imageSrc = '/images/washme.jpeg';
-            break;
-          case 'LEATHER TREATMENT':
-            imageSrc = 'images/leather.avif';
-            break;
-          default:
-            imageSrc = `images/service-${(index % 6) + 1}.jpg`;
-        }
-      }
-      
-      html += `
+      let imageSrc = '/images/iconlogo.png';      html += `
         <div class="${service.gridClass}">
           <div class="service-container" style="position: relative;">
             <div class="service-badge wow fadeInUp" data-wow-delay="${delay}s">
