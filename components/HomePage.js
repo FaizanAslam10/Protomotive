@@ -668,7 +668,7 @@ export default function HomePage() {
               <ServiceCard 
                 id="04"
                 title="PAINT PROTECTION FILM (PPF)"
-                image="/images/services-2/4.webp"
+                image="/images/ppf.png"
                 description="PPF, is the 'king' of the automotive paint protection industry and possesses the best protection technology available."
                 delay=".6s"
               />
