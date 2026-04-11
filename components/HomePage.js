@@ -684,7 +684,7 @@ export default function HomePage() {
               <ServiceCard 
                 id="06"
                 title="WINDOW TINTING"
-                image="/images/services-2/6.webp"
+                image="/images/windowstint.png"
                 description="Precision Auto Center provides lifetime warranty against Adhesive failure, Peeling, Delamination, and more."
                 delay="1.0s"
               />
