@@ -1149,15 +1149,14 @@ export default function HomePage() {
 
         {/* Navigation Map Section */}
 <div className="cs_navigation_map wow fadeInUp">
-  <div 
-    id="map_canvas" 
-    style={{
-      width: '100%',
-      height: '400px',
-      position: 'relative',
-      overflow: 'hidden',
-      backgroundColor: '#1a1a1a'
-    }}
+  <iframe
+    src="https://maps.google.com/maps?q=Plot%20413%2C%20DHA%20Phase%208%20Ex%20Park%20View%20Block%20D%2C%20Lahore&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="400"
+    style={{ border: 0, backgroundColor: '#1a1a1a' }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
   />
 </div>
       </div>
